@@ -1,0 +1,3508 @@
+/* GLOBAL CSS START */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+  :root {
+    --blue: #252650;
+    --yellow: #b29c3f;
+  }
+
+
+.heading h1{
+    font-size: 52px;
+    font-family: street;
+  }
+.heading h2{
+    font-size: 42px;
+    font-family: karlaMedium;
+
+}
+.heading h3{
+    font-size: 37px;
+    font-family: karlaBold;
+}
+.heading h4{
+    font-size: 30px;
+    font-family: karlaRegular;
+}
+.heading h5{
+    font-size: 27px;
+    font-family: karlaBold;
+}
+.heading h6{
+    font-size: 45px;
+    font-family: latoRegular;
+}
+.heading p{
+    font-size: 21px;
+    font-family: karlaLight;
+}
+ .btn_wrap a{
+    font-family: karlaBold;
+    font-size: 21px;
+}
+.second_btn{
+    display: inline-block;
+    padding: 20px 27px;
+    color: #fff;
+    background-color: #fe0011;
+    border: none;
+}
+.second_btn:hover{
+    color: #fff !important;
+}
+.second_btn i{
+    padding-left: 10px;
+}
+.load_btn {
+    background-color: #e4e4e4;
+    padding: 20px 40px;
+    font-size: 18px;
+    font-family: barlowBold;
+    color: #000;
+    display: inline-block;
+    border: none;
+    letter-spacing: 1px;
+    transition: all 0.5s ease-in-out;
+    margin-top: 30px;
+}
+
+.load_btn:hover {
+    color: #000000;
+    background-color: #265170;
+}
+.yellow_btn {
+    background-color: var(--yellow);
+    padding: 10px 20px;
+    font-family: karlaBold;
+    color: var(--blue);
+    display: inline-block;
+    letter-spacing: 1px;
+    transition: 0.3s ease-in;
+    border-radius: 5px;
+    }
+    .yellow_btn:hover {
+    color: var(--blue);
+    transform: translateY(-2px);
+
+    }
+
+/* GLOBAL CSS END */
+
+
+/* FONT FAMILY */
+
+/* FONT FAMILY */
+@font-face {
+    font-family: bahscrif;
+    src: url(../fonts/bahnschrift.ttf);
+    }
+    @font-face {
+        font-family: heav;
+        src: url(../fonts/Heavitas.ttf);
+    }
+    @font-face {
+        font-family: karla;
+        src: url(../fonts/Karla-VariableFont_wght.ttf);
+    }
+    @font-face {
+        font-family: street;
+        src: url(../fonts/Streetwear.otf);
+    }
+    @font-face {
+        font-family: karlaLight;
+        src: url(../fonts/Karla-Light.ttf);
+    }
+    @font-face {
+        font-family: karlaRegular;
+        src: url(../fonts/Karla-Regular.ttf);
+    }
+    @font-face {
+        font-family: karlaMedium;
+        src: url(../fonts/Karla-Medium.ttf);
+    }
+    @font-face {
+        font-family: karlaBold;
+        src: url(../fonts/Karla-Bold.ttf);
+    }
+
+
+/* FONT FAMILY END HERE  *******************************/
+
+/* NEUTRAL FORM CSS  */
+.form-control{
+border-radius: 0px;
+padding: 12px 14px !important;
+}
+select.form-control:not([size]):not([multiple]){
+    height: calc(3.0rem + 2px);
+}
+.form-control::placeholder{
+    color: #000 !important;
+}
+
+/* CUSTOM RADIO BUTTON  CSS START*/
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+    line-height: 14px;
+    display: inline-block;
+    color: #666;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #000;
+    border-radius: 100%;
+    background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 9px;
+    height: 9px;
+    background: var(--blue);
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+
+/* CUSTOM RADIO BUTTON  CSS END*/
+
+/* BUTTON TOGLLER CSS  *******************************/
+
+.navber_btn .span_line {
+    display: block;
+    background-color: #000;
+    height: 2px;
+    width: 23px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    left: 0;
+    opacity: 1;
+    transition: all 0.35s ease-out;
+    transform-origin: center left;
+}
+.navber_btn:focus {
+    outline: none !important; 
+}
+
+/* top line needs a little padding */
+
+.navber_btn .span_line:nth-child(1) {
+    margin-top: 0.3em;
+}
+/**
+ * Animate collapse into X.
+ */
+/* top line rotates 45 degrees clockwise and moves up and in a bit to close the center of the X in the center of the button */
+
+.navber_btn:not(.collapsed) .span_line:nth-child(1) {
+    transform: translate(15%, -33%) rotate(45deg);
+}
+/* center line goes transparent */
+
+.navber_btn:not(.collapsed) .span_line:nth-child(2) {
+    opacity: 0;
+}
+/* bottom line rotates 45 degrees counter clockwise, in, and down a bit to close the center of the X in the center of the button  */
+
+.navber_btn:not(.collapsed) .span_line:nth-child(3) {
+    transform: translate(15%, 33%) rotate(-45deg);
+}
+
+
+/**
+ * Animate collapse open into hamburger menu
+ */
+
+
+/* top line moves back to initial position and rotates back to 0 degrees */
+
+.navber_btn .span_line:nth-child(1) {
+    transform: translate(0%, 0%) rotate(0deg);
+}
+
+
+/* middle line goes back to regular color and opacity */
+
+.navber_btn .span_line:nth-child(2) {
+    opacity: 1;
+}
+
+
+/* bottom line goes back to initial position and rotates back to 0 degrees */
+
+.navber_btn .span_line:nth-child(3) {
+    transform: translate(0%, 0%) rotate(0deg);
+}
+/* .navber_btn{
+    border-color: transparent !important;
+} */
+
+
+
+
+
+/*************************** NAVBAR CSS START HERE ***************************/
+/* HEXA SHAPE CSS */
+.top_nav .main_wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+.top_nav  span{
+    color: #83807d;
+}
+.top_nav span i {
+    font-size: 13px;
+    color: #83807d;
+}
+.top_nav span {
+    position: relative;
+}
+.fa-magnifying-glass:before,
+.fa-search:before {
+    position: absolute;
+    left: 0px;
+    top: 22%;
+}
+.top_nav form input {
+    border: none !important;
+    background-color: transparent !important;
+    border-radius: 0px !important;
+    padding-left: 20px !important;
+    padding-top: 10px !important;
+    padding-bottom: 8px !important;
+}
+.top_nav form input::placeholder{
+    color: #252650 !important;
+}
+
+.hex {
+    height: 0;
+    width: 340px;
+    border-top: 144px solid #fff;
+    border-right: 100px solid transparent;
+    border-left: 100px solid transparent;
+    position: relative;
+  }
+
+  .pentagon {
+    /* box-sizing: content-box;
+    border-width: 50px 18px 0;
+    border-style: solid;
+    border-color: red transparent; */
+    position: relative;
+    top: 32px;
+    height: 80px;
+    width: 170px;
+    background-color: #fff;
+  }
+  /* .pentagon::before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -85px;
+    left: -18px;
+    border-width: 0 45px 35px;
+    border-style: solid;
+    border-color: transparent transparent red;
+  } */
+  .pentagon::before {
+    content: "";
+    position: absolute;
+    bottom: -50.8675px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 84px solid transparent;
+    border-right: 87px solid transparent;
+    border-top: 51.8675px solid #fff;
+  }
+
+
+
+
+.scrolling_nav{
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:#fff;
+    z-index: 9999;
+    }
+
+/* HEADer csS START */
+.withbg{
+    background-color: #000000;
+    position: relative !important;
+}
+.bottom_nav{
+    position: relative ;
+}
+.navbar{
+    padding: 1rem 9rem;
+    z-index: 1;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    background-color: #efedea;
+}
+.navbar .logo_div{
+    max-width: 350px;
+}
+.navbar .logo_div img{
+    position: absolute;
+    bottom: 18px;
+    padding: 0px 10px;
+}
+nav .left_nav {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+nav .navbar-collapse {
+    justify-content: space-between;
+}
+nav .nav_right {
+    display: flex;
+    align-items: center;
+}
+nav .right_nav {
+    margin-left: auto;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+.withbg nav ul li a{
+    color:var(--blue);
+    font-family: karlaBold;
+}
+nav ul li a{
+    color: var(--blue) !important;
+    font-size: 21px;
+    font-family: karlaBold;
+    white-space: nowrap;
+}
+.withbg nav ul li a:hover{
+    color: var(--blue) !important;
+}
+nav .form-control:focus {
+    box-shadow: none !important;
+}
+
+/* MEGA NAV CSS */
+
+.nav_link:hover .subnav{
+    visibility: visible;
+    height: auto;
+    padding: 19px 10px;  
+}
+.nav_link .mega_sub .main_wrap{
+    display: none;
+}
+.nav_link:hover .mega_sub .main_wrap{
+    display: block;
+}
+.mega_sub{
+    padding: 35px 10px;
+}
+.mega_sub .main_wrap .card_wrap .img_wrap{
+    height: 280px;
+}
+.mega_sub .main_wrap .card_wrap .img_wrap img{
+    height: 100%;
+}
+.mega_sub .main_wrap .card_wrap .text_wrap{
+    padding: 20px 0px;
+    text-align: center;
+}
+.mega_sub .main_wrap .card_wrap .text_wrap p{
+    color: #000;
+}
+.subnav{
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+    left: 0;
+    top: 82px;
+    width: 100%;
+    background-color: #fff;
+    z-index: 5;
+    display: flex;
+    transition: all 0.5s ease-in-out;
+}
+.subnav_item{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.subnav_item a{
+    padding: 0px 30px;
+}
+
+
+.bkChng{
+    background-color: #000 !important;
+}
+.withbg{
+    background-color: #dedede;
+}
+.mobile_nav {
+    display: none;
+}
+.navbar .subnav .main_wrap{
+    width: 100%;
+}
+.navbar .length_tag .main_inner_wraper{
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+}
+.navbar .brand_tag .card_wrap .img_wrap{
+    max-width: 130px;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+.navbar .subnav .main_wrap .top_btn {
+    margin-top: 20px;
+}
+.navbar .subnav .filter_same{
+    position: relative;
+    max-width: 1460px;
+    margin: 0 auto;
+    padding: 40px 0px;
+    width: 100%;
+}
+.navbar .subnav .filter_same h3{
+    font-family: cfrkRegular;
+    font-size: 37px;
+    background-color: #fff;
+    padding: 0px 20px;
+    display: inline-block;
+}
+.navbar .subnav .filter_same h3::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transform: translateY(-50%);
+    background-color: #000;
+    z-index: -1;
+}
+.subnav .trailor_type .img_wrap{
+    max-width: 230px;
+    margin: 0 auto;
+    height: 169px;
+}
+.subnav .trailor_type .img_wrap img{
+    height: 100%;
+}
+.subnav .trailor_type{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+.subnav .trailor_type span{
+    font-size: 20px;
+    font-family: ibmBold;
+}
+.subnav .checkmark {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 22px;
+    width: 22px;
+    background: transparent;
+    border: 1px solid #65686b;
+}
+
+/* HEADer csS START */
+
+/*************************** NAVBAR CSS START HERE ***************************/
+
+/* HOME BANNER SECTION START */
+/* banner section */
+.banner .main_wrap{
+    position: relative;
+}
+.banner .img_wrap{
+    position: relative;
+    padding-top: 44%;
+}
+.banner .img_wrap::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .4);
+}
+.banner .img_wrap img{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+
+}
+.banner .img_wrap video{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+
+}
+.banner .text_wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+}
+.banner .text_wrap .heading h1{
+    color: #fff;
+
+}
+.banner .text_wrap span{
+    font-size: 24px;
+    font-family: karlaRegular;
+    color: #fff;
+    padding-top: 15px;
+    display: inline-block;
+}
+.banner .btn_wrap a{
+    display: inline-block;
+    padding: 13px 30px;
+    color: #fff;
+    border: 1px solid #fff;
+    margin-top: 25px;
+    border-radius: 5px;
+
+}
+.banner .btn_wrap a i{
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+/* HOME BANNER SECTION END */
+/* GROVE TEXT SECTION START */
+.groove_text{
+    /* padding: 65px 0px; */
+    position: relative;
+}
+.groove_text .img_wrap{
+    position: relative;
+    padding-top: 30%;
+ }
+ .groove_text .img_wrap img{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+ }
+.groove_text .main_wrap .text_wrap{
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 85px 0px;
+    width: 100%;
+    text-align: center;
+}
+.groove_text .main_wrap .text_wrap  h2{
+    color: var(--blue);
+}
+.groove_text .main_wrap .text_wrap span{
+    font-family: street;
+}
+.groove_text .main_wrap .text_wrap p{
+    padding: 20px 0px;
+}
+.groove_text .img_border{
+    position: absolute;
+    bottom: 0;
+}
+
+/* GROVE TEXT SECTION END */
+
+/* BRAND SECTION START */
+.brand{
+    padding: 65px 0px;
+    border-bottom: 1px solid #c0bdbd;
+}
+.brand .card_wraper{
+    margin-bottom: 35px;
+}
+.brand .card_wraper .hover_wrap{
+    position: relative;
+}
+.brand .card_wraper .hover_text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(149 144 44 / 50%);
+    display: none;
+}
+.brand .card_wraper .btn_wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.brand .card_wraper .btn_wrap .white_btn{
+    background-color: transparent;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 8px 20px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 18px;
+}
+.brand .card_wraper:hover .hover_text{
+    display: block;
+}
+.brand .brand_logo{
+    padding-top: 15px;
+    max-width: 230px;
+    margin: 0 auto;
+    height: 60px;
+}
+.brand .brand_logo img{
+    object-fit: contain;
+    height: 100%;
+}
+/* BRAND SECTION END */
+
+/* ALL SERVICE SECTION START */
+.all_service{
+    padding: 65px 0px;
+    border-bottom: 1px solid #c0bdbd;
+}
+.all_service .text_wrap{
+    border-left: 1px solid #bebcbc;
+}
+.all_service .text_wrap h3{
+    padding: 15px 0px;
+    color: var(--blue);
+    padding-left: 25px;
+
+}
+/* ALL SERVICE SECTION END */
+
+
+/* FOOTER SECTION CSS START */
+footer{
+    padding: 60px 0px;
+    background-color: #f2f1f0;
+}
+footer .footer_logo{
+    max-width: 220px;
+    margin: 0 auto;
+    width: 100%;
+}
+footer .col_wraper span{
+    color: var(--red);
+    font-family: acu;
+    display: inline-block;
+    font-size: 18px;
+}
+footer  ul p{
+    color: #fff;
+}
+footer .col_wraper ul li{
+    font-size: 18px;
+    color: var(--blue);
+    padding-bottom: 8px;
+}
+footer .col_wraper ul li a{
+    font-family: karlaLight;
+    color: var(--blue);
+}
+footer  ul li:first-child a{
+    font-family: karlaBold;
+    font-size: 20px;
+}
+footer .col_wraper input::placeholder{
+    font-family: karlaLight;
+    color: #a8a1a1 !important;
+}
+footer .col_wraper input{
+    background: transparent !important;
+    border: none;
+    border-bottom: 1px solid var(--blue);
+    padding: 5px 0px;
+    width: 100%;
+}
+footer .col_wraper input:focus{
+    border-bottom: 1px solid var(--blue);
+    outline: none;
+}
+footer .col_wraper .btn_wrap a{
+    background-color: transparent;
+    color: var(--blue);
+    display: inline-block;
+    border: 1px solid var(--blue);
+    padding: 15px 40px;
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+}
+footer .soc_icon{
+    display: flex;
+    flex-direction: column;
+}
+footer .soc_icon i{
+    color: #fff;
+    font-size: 24px;
+    padding-bottom: 20px;
+} 
+.bottom_footer{
+    background-color: #3587c8;
+    /* margin-top: 30px; */
+}
+.main_text_wraper p{
+    font-size: 15px;
+    font-family: acu;
+    color: #fff;
+    padding: 13px 0px;
+}
+
+/* FOOTER SECTION CSS END */
+
+/******************************** HOME PAGE CSS END HERE ********************************/
+
+
+/******************************** SERVICE PAGE CSS START HERE ********************************/
+/* SERVICE BANNER SECTION CSS */
+.service_banner .img_wrap::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .6);
+
+}
+
+/* SERVICES DETAIL SECTION CSS */
+.service_detail{
+   
+}
+.service_detail .top_brand_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.service_detail .top_brand_section .img_wrap{
+    width: calc(90% / 4);
+    text-align: center; 
+}
+.service_detail .top_brand_section .img_wrap img{
+    width: 100%;
+    max-width: 160px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+.service_detail .left_wraper{
+    border-right: 1px solid #d7d7d7;
+}
+.service_detail .body_sec .card_wrap {
+    margin-bottom: 30px;
+}
+.service_detail .body_sec .card_wrap .card_body{
+    border-left: 1px solid #d7d7d7;
+    padding: 20px 0px 40px 25px;
+}
+.service_detail .right_wraper{
+    padding-top: 60px;
+}
+.service_detail .right_wraper .form_body h5{
+    color: var(--blue);
+    text-align: center;
+    font-family: karlaBold;
+    padding: 30px 0px;
+}
+.service_detail .right_wraper .top_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px solid #d7d7d7;
+}
+.service_detail .right_wraper .top_text h4{
+    font-family: karlaMedium;
+    padding-bottom: 15px;
+    color: var(--blue);
+}
+.service_detail .right_wraper .top_text a{
+    color: var(--blue);
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+.service_detail .right_wraper .top_text span{
+    font-family: karlaBold;
+}
+.service_detail .form-check-inline{
+    margin-right: 0.95rem;
+}
+.service_detail .prefered .form-check-inline{
+    margin-right: 2.95rem;
+}
+
+
+/******************************** SERVICE PAGE CSS END HERE ********************************/
+
+
+/******************************** Power PAGE CSS START HERE ********************************/
+
+/* POWER DETAIL SECTION CSS */
+.power_detail .left_wraper{
+    padding-bottom: 70px;
+}
+.power_detail .text_wrap h2{
+    color: var(--blue);
+    font-family: karlaLight;
+    padding-bottom: 15px;
+}
+.power_detail .text_wrap p{
+    padding-bottom: 20px;
+}
+.power_detail .text_wrap > *:nth-child(4) {
+    padding-top: 20px;
+}
+
+
+/******************************** Power PAGE CSS END HERE ********************************/
+
+/******************************** STORAGE PAGE CSS START HERE ********************************/
+/* STORAGE DETAIL SECTION CSS */
+.storage_detail .main_wraper{
+    padding: 65px 0px;
+}
+.storage_detail .text_wrap h4{
+    color: var(--blue);
+    font-family: karlaMedium;
+    padding-bottom: 15px;
+}
+.storage_detail .text_wrap{
+    border-bottom: 1px solid #d7d7d7;
+    padding-bottom: 30px;
+}
+.storage_detail .text_wrap p{
+    font-size: 18px;
+}
+.storage_detail .text_wrap > *:nth-child(6){
+    padding-top: 15px;
+}
+.storage_detail .text_wrap ul {
+    padding: 20px 0px;
+}
+.storage_detail .text_wrap ul li{
+    list-style: disc;
+    list-style-position: inside;
+    font-size: 18px;
+    font-family: karlaLight;
+    padding-bottom: 8px;
+}
+.storage_detail .text_wrap span{
+    font-family: karlaRegular;
+    color: var(--blue);
+    font-size: 27px;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+.storage_detail .storage_type{
+    padding-top: 38px;
+}
+.storage_detail .storage_type .top_text{
+    padding-bottom: 30px;
+}
+.storage_detail .storage_type .top_text span{
+    font-family: karlaLight;
+    font-size: 21px;
+}
+.storage_detail .storage_type .img_wrap{
+    max-width: 450px;
+    height: 270px;
+}
+.storage_detail .storage_type .img_wrap img{
+    height: 100%;
+}
+/******************************** STORAGE PAGE CSS END HERE ********************************/
+
+/******************************** BROKERAGE PAGE CSS START HERE ********************************/
+
+/* BROKERAGE DETAIL SECTION CSS */
+
+.brokerage_detail .main_wraper{
+    padding: 65px 0px;
+}
+.brokerage_detail .top_text{
+    padding-bottom: 40px;
+}
+.brokerage_detail h2{
+        color: var(--blue);
+        text-align: center;
+        font-size: 24px;
+}
+.brokerage_detail .form_wraper .label_boat{
+    color: var(--blue);
+    font-size: 24px;
+    font-family: karlaBold;
+}
+.brokerage_detail .right_wraper .img_wrap{
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+/******************************** BROKERAGE PAGE CSS END HERE ********************************/
+
+/******************************** IN_WATER PAGE CSS END HERE ********************************/
+
+/* DOCKAGE DETAIL SECTION CSS */
+.docakge_detail .main_wraper{
+    padding: 65px 0px;
+}
+.docakge_detail .main_wraper .text_wraper h4{
+    color: var(--blue);
+
+}
+.docakge_detail .main_wraper .text_wraper p{
+    padding: 15px 0px;
+}
+.docakge_detail .main_wraper .text_wraper h5{
+    font-family: karlaBold;
+    padding-bottom: 15px;
+
+}
+.docakge_detail .main_wraper .text_wraper ul li{
+    list-style: disc;
+    padding-bottom: 8px;
+    list-style-position: inside;
+}
+.docakge_detail  .img_wraper{
+    display: flex;
+    align-items: center;
+    padding-bottom: 25%;
+}
+
+/******************************** IN_WATER PAGE CSS END HERE ********************************/
+
+/******************************** EVENT PAGE CSS START HERE ********************************/
+.events{
+    padding-top: 80px;
+    padding-bottom: 70px;
+    border-bottom: 2px solid #d7d7d7;
+}
+.events .top_text{
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.events .top_text h3{
+    font-family: street;
+    color: var(--blue);
+}
+.events .top_text p{
+    padding: 20px 0px;
+}
+.events .events_body{
+    padding-top: 30px;
+}
+.events .events_body .card_wraper{
+    margin-bottom: 25px;
+}
+.events .events_body .img_wrap{
+    height: 440px;
+}
+.events .events_body .img_wrap img{
+    height: 100%;
+}
+.events .events_body .card_body{
+    border-left: 1px solid #d7d7d7;
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+.events .events_body .card_body span{
+    color: var(--blue);
+    font-family: karlaBold;
+    font-size: 18px;
+    padding-top: 10px;
+    display: inline-block;
+}
+.events .events_body .card_body h4{
+    color: #000;
+    font-family: karlaBold;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.events .events_body .card_body p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    white-space: normal;
+}
+
+/* EVENT SLIDER SECTION START */
+.event_slider{
+    padding: 65px 0px;
+}
+.event_slider .top_text{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.event_slider .carousel_wraper .card_wrap .img_wrap{
+    /* max-width: 920px; */
+    height: 540px;
+}
+.event_slider .carousel_wraper .card_wrap .img_wrap img{
+    height: 100%;
+}
+.event_slider .carousel_wraper .text_wrap{
+    max-width: 735px;
+    margin: 0 auto;
+    padding: 15px 30px;
+    margin-top: -40px;
+    background-color: #f1f1f1;
+    position: relative;
+    z-index: 1;
+    display: none;
+}
+.event_slider .carousel_wraper .center .text_wrap{
+    display: block;
+}
+
+/* EVENT PAGE ONLY FOR */
+
+/* Owl Carousel Navigation Arrows */
+.neutral .owl-carousel .owl-nav button.owl-next,
+.neutral .owl-carousel .owl-nav button.owl-prev {
+    background-color: transparent;
+    border: 2px solid #000; /* Border style */
+    border-radius: 50%; /* Circle shape */
+    width: 40px; /* Circle ka diameter */
+    height: 40px; /* Circle ka diameter */
+    margin: 30px 30px; /* Spacing between arrows */
+}
+
+/* Arrow Icons */
+.neutral .owl-carousel .owl-nav button.owl-next span,
+.neutral .owl-carousel .owl-nav button.owl-prev span {
+    font-family: FontAwesome; /* Use a font icon library like FontAwesome */
+    font-weight: 900;
+    font-size: 20px;
+    content: "\f105"; /* Unicode character for arrow icons */
+    color: #000; /* Arrow icon color */
+    text-align: center;
+    line-height: 40px; /* Vertically center the arrow icon */
+}
+
+/* EVENT SLIDER SECTION END */
+.gallery .top_text h2{
+    color: var(--blue);
+    font-family: street;
+}
+
+/******************************** EVENT PAGE CSS END HERE ********************************/
+
+/******************************** BLOG PAGE CSS START HERE ********************************/
+/* EVENT SECTION CSS */
+.blogs{
+    padding: 65px 0px;
+}
+.ne_blog p{
+    font-size: 18px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    white-space: normal;
+}
+.blogs .top_text h2{
+    font-family: street;
+    color:  var(--blue);
+    text-align: center;
+    padding-bottom: 30px;
+}
+.blogs .main_wraper .img_wrap{
+    /* max-width: 1110px; */
+    height: 530px;
+}
+.blogs .main_wraper .img_wrap img{
+    height: 100%;
+}
+.blogs .title_body h3{
+    font-family: karlaRegular;
+    padding-top: 15px;
+}
+.blogs .title_body span{
+    font-family: karlaLight;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    display: inline-block;
+}
+.blogs .diff_blogs{
+    padding-top: 40px;
+}
+.blogs .diff_blogs .card_wraper{
+    margin-bottom: 30px;
+}
+.blogs .diff_blogs .img_wrap{
+    height: 385px;
+}
+.blogs .diff_blogs .img_wrap imf{
+    height: 100%;
+}
+.blogs .diff_blogs .card_body h4{
+    padding: 15px 0px;
+}
+.blogs .diff_blogs .btn_wrap a{
+    background-color: #efedea;
+    border: 0px;
+    padding: 18px 25px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 30px;
+    color: var(--blue);
+}
+.blogs .right_wraper{
+    padding-left: 50px;
+}
+.blogs .right_wraper .text_wrap h5{
+    color: var(--blue);
+    font-size: 21px;
+    font-family: karlaBold;
+    padding-bottom: 20px;
+}
+.blogs .right_wraper .text_wrap ul{
+    border-bottom: 1px solid #d7d7d7;
+}
+.blogs .right_wraper .text_wrap ul li{
+    padding-bottom: 10px;
+    font-family: karlaLight;
+    font-size: 18px;
+}
+.blogs .right_wraper .text_wrap ul li:last-child{
+    padding-bottom: 25px;
+}
+.blogs .right_wraper .text_wrap select{
+    border: 0px;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+
+
+/******************************** BLOG PAGE CSS END HERE ********************************/
+
+/******************************** BLOG DETAIL PAGE CSS START HERE ********************************/
+
+/* BLOG DETAIL SECTION CSS */
+
+.blog_detail .right_wraper  .text_wrap h4{
+    font-family: karlaBold;
+    padding-bottom: 25px;
+}
+.blog_detail .right_wraper .text_wrap h5{
+    font-family: karlaRegular;
+}
+.blog_detail .title_body .text_wrap p{
+    padding-bottom: 15px;
+}
+.blog_detail .right_wraper .card_wrap .img_wrap{
+    max-width: 350px;
+    height: 250px;
+    margin-bottom: 10px;
+}
+.blog_detail .right_wraper .card_wrap{
+    margin-bottom: 30px;
+}
+
+/******************************** BLOG DETAIL PAGE CSS END HERE ********************************/
+
+
+/******************************** TEAM_CEO PAGE CSS START HERE ********************************/
+
+.team_ceo{
+    padding: 65px 0px;
+}
+.team_ceo .main_wraper h2{
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: street;
+    color: var(--blue);
+}
+.team_ceo .card_wrap .img_wrap{
+    height: 330px;
+}
+.team_ceo .card_wrap .img_wrap img{
+    height: 100%;
+}
+.team_ceo .ceo_sec .card_body .text_wrap{
+    text-align: center;
+}
+.team_ceo .card_body h5{
+    padding-top: 10px;
+}
+.team_ceo .card_body span{
+    font-size: 21px;
+    font-family: karlaRegular;
+}
+
+.team_ceo .team_member{
+    margin-top: 40px;
+}
+.team_ceo .team_member .inner_wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.team_ceo .team_member  h4{
+    font-family: heav;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.team_ceo .team_member .card_wrap{
+    width: 100%;
+    max-width: 260px;
+}
+.team_ceo .team_member .card_wrap .img_wrap{
+    max-width: 260px;
+    height: 260px;
+}
+.team_ceo .team_member .card_wrap .img_wrap img{
+    height: 100%;
+}
+.team_ceo .team_member .card_wrap{
+    text-align: center;
+}
+.team_ceo .team_member .card_wrap p{
+    font-family: karlaBold;
+}
+.team_ceo .team_member .card_wrap span, .team_ceo .team_member .card_wrap a{
+    font-size: 18px;
+    font-family: karlaLight;
+    color: #000;
+}
+
+/******************************** TEAM_CEO PAGE CSS END HERE ********************************/
+
+/******************************** BRAND PAGE CSS START HERE ********************************/
+
+.brand_page .main_wrap .top_text{
+    max-width: 1000px;
+    margin: 0px auto;
+    padding-bottom: 30px;
+}
+.brand_page .main_wrap .top_text .img_wrap{
+    max-width: 234px;
+    height: 115px;
+    margin: 30px auto;
+}
+.brand_page .main_wrap .top_text .img_wrap img{
+    height: 100%;
+}
+
+
+/******************************** BRAND PAGE CSS END HERE ********************************/
+
+/******************************** BRAND_DETAIL PAGE CSS START HERE ********************************/
+.brand_detail .logo_wrap{
+    max-width: 340px;
+    margin: 0 auto;
+}
+.brand_detail .btn_wrap {
+    margin-top: 20px;
+}
+
+/*BRAND TEXT SECTION CSS */
+.brand_text{
+    padding: 65px 0px;
+    border-bottom: 1px solid #d7d7d7;
+}
+.brand_text p{
+    font-size: 18px;
+    text-align: center;
+    color: #000;
+}
+.brand_text .img_wrap{
+    max-width: 290px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+/* SAME BRAND BOATS SECTION CSS  */
+.same_brand_boat{
+    padding: 65px 0px;
+}
+.same_brand_boat .top_heading{
+    text-align: center;
+}
+.same_brand_boat .top_heading h2{
+    font-family: karlaRegular;
+    padding-bottom: 30px;
+}
+.same_brand_boat .body_wraper .card_wrap .img_wrap{
+    height: 300px;
+}
+.same_brand_boat .body_wraper .img_wrap img{
+    height: 100%;
+}
+.same_brand_boat .body_wraper .text_wrap{
+    text-align: center;
+    padding-top: 10px;
+}
+.same_brand_boat .body_wraper .text_wrap .red_value{
+    color: #fe0011;
+    display: inline-block;
+    font-family: karlaBold;
+    font-size: 19px;
+}
+.p_bars{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+.p_bars p{
+    position: relative;
+    padding: 0px 10px;
+    font-size: 18px;
+}
+.p_bars p:nth-child(2){
+    color: var(--main);
+}
+.p_bars p+p::before{
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 16px;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #aeaeae;
+}
+
+/******************************** BRAND_DETAIL PAGE CSS END HERE ********************************/
+
+/******************************** CONTACT PAGE CSS START HERE ********************************/
+.contact{
+
+}
+.contact h2{
+    font-family: street;
+    padding-bottom: 30px;
+    color: var(--blue);
+    text-align: center;
+}
+.contact .main_wrap{
+    border-right: 1px solid #d7d7d7;
+}
+.contact .contact_detail{
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+.contact .text_wrap{
+    text-align: center;
+}
+.contact .text_wrap h3{
+    font-family: karlaRegular;
+    color: var(--blue);
+}
+.contact .text_wrap .p_m{
+    padding: 20px 0px;
+    font-size: 21px;
+}
+.contact .text_wrap .phone_num a{
+    display: block;
+    color: #213069;
+    font-size: 27px;
+}
+.contact .text_wrap .hours{
+    padding-top: 20px;
+}
+.contact .text_wrap .hours p{
+    font-size: 21px;
+}
+.contact .map_wrap{
+    max-width: 1330px;
+    height: 630px;
+}
+.contact .right_form{
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+.contact .form_body h5{
+    font-family: karlaRegular;
+    font-size: 37px;
+    color: var(--blue);
+    padding-bottom: 15px;
+}
+
+/******************************** CONTACT PAGE CSS END HERE ********************************/
+
+/******************************** THANKYOU PAGE  CSS START HERE ********************************/
+.thankyou{
+    padding: 65px 0px;
+}
+.thankyou .top_text{
+    text-align: center;
+}
+.thankyou .top_text h2{
+    font-family: karlaLight;
+    color: var(--blue);
+
+}
+.thankyou .top_text p{
+    padding: 10px 0px;
+}
+.thankyou .top_text .btn_wrap{
+    margin-top: 20px;
+}
+.thankyou .top_text .btn_wrap a:first-child{
+    margin-right: 10px;
+}
+.thankyou .img_bg{
+    margin-top: 50px;
+}
+
+/******************************** THANKYOU PAGE  CSS END HERE ********************************/
+
+/******************************** TESTIMONAIL PAGE CSS START HERE ********************************/
+.testimonial{
+    padding: 65px 0px;
+    border-bottom: 1px solid #d7d7d7;
+}
+.testimonial .top_heading{
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+.testimonial .top_heading h2{
+    font-family: street;
+    color: var(--blue);
+    text-align: center;
+}
+.testimonial .top_heading p{
+    padding: 30px 0px;
+}
+.testimonial .testimoail_card_wraper .card_wraper{
+    background-color: #f7f7f7;
+    padding: 20px 25px;
+    max-width: 408px;
+    margin: 0 auto;
+    border: 1px solid #d7d7d7;
+    height: 100%;
+}
+.testimonial .testimoail_card_wraper .frame_wrap{
+    max-width: 408px;
+    height: 250px;
+}
+.testimonial .testimoail_card_wraper .frame_wrap img{
+    height: 100%;
+}
+.testimonial .testimoail_card_wraper .coma{
+    max-width: 70px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.testimonial .testimoail_card_wraper .coma img{
+    height: 49px !important;
+}
+.testimonial .testimoail_card_wraper .card_wraper p{
+    font-size: 16px;
+    padding-top: 18px;
+    text-align: center;
+}
+.testimonial .testimoail_card_wraper .card_wraper a{
+    padding-top: 15px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    color: var(--blue);
+    font-size: 21px;
+    font-family: karlaBold;
+}
+
+/******************************** TESTIMONAIL PAGE CSS END HERE ********************************/
+
+/******************************** Review PAGE CSS START HERE ********************************/
+.review{
+    padding: 65px 0px;
+}
+.review .top_heading{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.review .upload_div{
+    background-color: #fff;
+    border: 1px solid #d7d7d7;
+}
+.review .upload_div input{
+    opacity: 0;
+    z-index: 10;
+    position: absolute;
+}
+.review .upload_div .btn_wrap {
+    background-color: #161845;
+    width: 100%;
+    max-width: 200px;
+    display: inline-block;
+    padding: 10px 0px;
+    text-align: center;
+    margin-right: 15px;
+}
+.review .upload_div .btn_wrap a{
+    color: #fff;
+}
+
+/******************************** Review PAGE CSS END HERE ********************************/
+
+/******************************** ABOUT PAGE CSS START HERE ********************************/
+.about{
+    padding: 65px 0px;
+    border: 1px solid #d7d7d7;
+}
+.about .legend h2{
+    font-family: karlaLight;
+    color: var(--blue);
+}
+
+/* HISTORY SECTION CSS */
+.history{
+    padding: 8px 0px;
+}
+.history .top_text h2{
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: karlaLight;
+    color: var(--blue);
+}
+
+
+
+.imghi img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imghi {
+    width: 400px;
+    height: 250px;
+}
+
+.line2 {
+    height: 2px;
+    width: 90%;
+    background-color: #00000069;
+}
+
+.line {
+    height: 2px;
+    width: 50%;
+    background-color: #00000069;
+}
+
+.content.history {
+    border-left: 1px solid black;
+}
+
+.content.historyleft {
+    border-right: 1px solid black;
+}
+
+.histwrap {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 100%;
+}
+
+.histwrap2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 39px 0px;
+    position: relative;
+    height: 100%;
+}
+
+.date {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: -51px;
+    z-index: 9;
+}
+
+.date.second {
+    right: unset;
+    left: -49px;
+}
+.date.dbl {
+    right: -50px;
+}
+.date.dbl.second {
+    left: -49px;
+    right: unset;
+}
+.history .col-lg-6:nth-child(even) {
+    border-left: 1px solid #000;
+}
+
+.date>h6 {
+    border-radius: 50px;
+    border: 2px solid var(--darkblue);
+    /* padding: 20px; */
+    color: white;
+    background-color: #8B93A7;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content.history.second {
+    border-right: 1px solid black;
+    border-left: 0;
+}
+
+
+/******************************** ABOUT PAGE CSS END HERE ********************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************* ABOUT US PAGE START HERE *********************************/
+/* BANNER SECTION CSS */
+.about_banner .text_wrap p{
+    color: #fff;
+}
+.about_banner .text_wrap{
+    max-width: 980px;
+    padding: 40px 30px;
+}
+.about_banner .text_wrap h1{
+    padding-bottom: 20px;
+}
+.about_banner .text_wrap p+p{
+    padding-top: 15px;
+}
+
+/* CHILD SEC START HERE */
+.child_sec{
+    padding: 65px 0px;
+}
+.child_sec .inner_div{
+    display: flex;
+    align-items: center;
+}
+.child_sec .inner_div .img_wrap{
+   width: 280px;
+    /* width: 100%; */
+}.child_sec .inner_div .text_wrap{
+    /* max-width: 540px; */
+    width: calc(100% - 280px);
+    padding-left: 20px;
+}
+
+/* ABOUT SALE SECTION CSS */
+.about_sale{
+    padding: 65px 0px;
+}
+.about_sale .text_wrap{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 130px 20px;
+}
+.about_sale .text_wrap p{
+    padding: 20px 0px;
+}
+
+/******************************** ABOUT US PAGE END HERE ********************************/
+
+/******************************** SERVICE PAGE START HERE ********************************/
+.service_banner .text_wrap{
+    max-width: 1000px;
+    padding: 40px 50px;
+}
+.service_banner .text_wrap h1{
+    padding-bottom: 15px;
+}
+.service_banner .text_wrap p{
+    padding: 15px 0px;
+}
+.service_banner .text_wrap p, .service_banner .text_wrap span{
+    color: #fff;
+}
+.service_banner .text_wrap .journey{
+    font-size: 27px;
+}
+.service_banner .bold_span{
+    font-size: 21px;
+    font-weight: bold;
+}
+
+/* SERVICE PROCESS CSS */
+.service_process{
+    padding: 65px 0px;
+}
+.service_process .top_heading{
+    text-align: center;
+}
+.service_process .body_wraper{
+    padding-top: 30px;
+}
+.service_process .body_wraper  .card_wraper{
+    display: flex;
+}
+.service_process .card_wraper .red_box span{
+    display: inline-block;
+    padding: 8px 18px;
+    background-color: #fe0011;
+    text-align: center;
+    font-size: 26px;
+    color: #fff;
+}
+.service_process .card_wraper .text_wrap{
+    padding-left: 20px;
+}
+.service_process .card_wraper .text_wrap .min_head{
+    font-size: 24px;
+    display: inline-block;
+    padding-bottom: 25px;
+    font-weight: 500;
+    line-height: 0px;
+}
+
+/* MAINTINNACE SECTION CSS */
+.maintinance .img_wrap{
+    position: relative;
+    padding-top: 35%;
+}
+.maintinance .img_wrap img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.maintinance .planing_sec{
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #e3e3e3;
+    padding: 70px 120px;
+    padding-bottom: 130px;
+    margin-top: -150px;
+    position: relative;
+}
+.maintinance .planing_sec::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 68%, rgba(255, 255, 255, 1) 95%);
+    z-index: 0;
+}
+.maintinance .planing_sec .inner_wraper{
+    position: relative;
+    z-index: 1;
+}
+.maintinance .planing_sec .inner_wraper h5{
+    font-family: barlowRegular;
+    padding: 15px 0px;
+}
+.maintinance .planing_sec .inner_wraper .car{
+    font-size: 18px;
+    font-family: barlowBold;
+}
+.maintinance .planing_sec h3{
+    padding-bottom: 10px;
+}
+.maintinance .bulet_wraper{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.maintinance .rate_detail{
+    display: flex;
+    justify-content: space-between;
+}
+.maintinance .tabel_section .rate_list{
+    width: 100%;
+    max-width: 331px;
+}
+.maintinance .tabel_section .additional{
+    max-width: 100%;
+    margin-top: 30px;
+}
+.maintinance .tabel_section .rate_list h5{
+    padding-bottom: 15px;
+}
+.maintinance table{
+    width: 100%;
+}
+.maintinance .tabel_section td{
+    padding: 5px 10px;
+}
+.maintinance table, tr, td{
+    border: 1px solid #000;
+   
+}
+
+/* SERVICE_OPTION SECTION CSS */
+.service_option .text_wrap{
+    height: 100%;
+
+}
+.service_option .inner_h{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 60px;
+}
+.service_option .inner_h h3{
+    padding-bottom: 15px;
+}
+.service_option .red_ul{
+    display: flex;
+    padding-top: 15px;
+}
+.service_option .red_ul li{
+    padding-bottom: 10px;
+}
+.service_option .red_ul li span{
+    background-color: #fe0011;
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+    text-align: center;
+    color: #fff;
+}
+.service_option .red_ul ul{
+    list-style-position: outside;
+}
+
+/* WASH SECTION CSS START */
+.wash_sec .bullet_point ul{
+    background-image: linear-gradient(to right, #000 10%, rgba(255, 255, 255, 0) 0%);
+    background-position: 0 14px;
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
+    width: 100%;
+    height:25px;
+}
+.wash_sec .bullet_point ul li span{
+    background: #e3e3e3;
+    padding-right: 10px
+}
+.wash_sec .bullet_point ul li span+span{
+    float: right;
+    padding-left: 10px
+}
+
+/* SERVICE FORM SECTION CSS */
+.service_form{
+    padding: 65px 0px;
+    background-color: #dedede;
+}
+.service_form h2{
+    padding-bottom: 30px;
+}
+
+/* OUR TEAM SECTION CSS */
+.our_team .main_wrap .text_wrap p{
+    color: #fff;
+}
+.our_team .text_wrap{
+    padding: 45px 60px;
+}
+
+/******************************** SERVICE PAGE END HERE ********************************/
+
+/******************************** PARTS PAGE START HERE ********************************/
+/* EXPERT SECTION CSS */
+.expert_part{
+    padding: 65px 0px;
+}
+
+/* REQUEST PARTS CSS */
+.request_part{
+    padding: 65px 0px;
+    background-color: #dedede;
+}
+.request_part p{
+    padding: 20px 0px;
+}
+.request_part .form_wraper .label_h{
+    font-size: 24px;
+    font-family: barlowBold;
+}
+
+/******************************** PARTS PAGE END HERE ********************************/
+
+/******************************** SERVICE AGREEMENT PAGE START HERE ********************************/
+/* AGREEMENT SECTION CSS */
+.agreement{
+    padding: 65px 0px;
+}
+.agreement .top_heading h4{
+    padding-bottom: 30px;
+}
+.agreement .body_wraper{
+    max-width: 1380px;
+    margin: 0 auto;
+}
+.agreement .body_wraper .card_wraper{
+    margin-bottom: 30px;
+}
+.agreement .body_wraper .img_wraper {
+    max-width: 660px;
+    height: 400px;
+}
+.agreement .body_wraper .img_wraper img{
+    height: 100%;
+}
+.agreement .body_wraper .heading_wraper .titel_b{
+    display: inline-block;
+    font-size: 27px;
+    font-family: barlowMedium;
+    color: #000;
+    padding-top: 15px;
+}
+
+/******************************** SERVICE AGREEMENT PAGE END HERE ********************************/
+
+/************************************** BLOG PAGE CSS START HERE ********************************************************/
+/* blog css */
+.blog{
+    padding: 60px 0px;
+}
+.blog .top_text{
+    padding-bottom: 30px;
+}
+.blog .post_blog {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.post_blog .p_bars{
+    padding: 10px 0px;
+}
+.blog .nav-pills{
+    justify-content: center;
+}
+.nav-pills .nav-link.active{
+    border: 1px solid transparent !important;
+    background-color: #fe0011;
+    color: #fff !important;
+}
+.blog .nav-pills .nav-link{
+    border: 1px solid #000000;
+    border-radius: 0px !important;
+    color: #000000;
+    font-family: barlowBold;
+}
+.blog .nav-item{
+    padding: 0px 10px;
+}
+.blog .post_card .img_wrap{
+    height: 330px;
+    max-width: 500px;
+}
+.blog .post_card .img_wrap img{
+    height: 100%;
+}
+
+/* MEDIA QUERIES */
+@media(max-width:1366px){
+    .blog {
+        padding: 45px 0px;
+    }
+}
+/************************************** BLOG PAGE CSS END HERE ********************************************************/
+
+
+
+/************************************** CAREER PAGE CSS START HERE ********************************************************/
+/* CAREER BANNER CSS */
+.career_banner{
+    padding: 65px 0px;
+}
+.career_banner p{
+    padding: 20px 0px;
+    font-size: 24px;
+}
+
+/* AUTO REPAIR CSS  */
+.auto_repair{
+    padding: 65px 0px;
+}
+.auto_repair p{
+    padding: 20px 0px;
+}
+.auto_repair .black_text{
+    background-color: #000;
+    padding: 30px 48px;
+    color: #fff;
+}
+.auto_repair .black_text ul li{
+    padding-bottom: 10px;
+}
+.auto_repair .black_text h2{
+    padding-bottom: 20px;
+}
+.auto_repair .black_text .text_wraper span{
+    font-size: 24px;
+    font-family: barlowLight;
+}
+
+/* APPLY TODAY SECTION CSS */
+
+.apply_today{
+    background-color: #dedede;
+    padding: 65px 0px;
+}
+.apply_today .top_text h4{
+    padding-bottom: 30px;
+}
+.apply_today .upload_div{
+    background-color: #fff;
+}
+.apply_today .upload_div input{
+    opacity: 0;
+    z-index: 10;
+    position: absolute;
+}
+.apply_today .upload_div .btn_wrap {
+    background-color: #000;
+    width: 100%;
+    max-width: 200px;
+    display: inline-block;
+    padding: 10px 0px;
+    text-align: center;
+    margin-right: 15px;
+}
+.apply_today .upload_div .btn_wrap a{
+    color: #fff;
+
+
+}
+
+
+
+/************************************** CAREER PAGE CSS END HERE ********************************************************/
+
+/************************************** LOCATION PAGE CSS START HERE ********************************************************/
+.location{
+    padding: 65px 0px;
+}
+.location .main_wraper .top_heading p{
+    font-size: 24px;
+    font-family: barlowLight;
+    padding: 25px 0px;
+}
+.location .loca_cards .card_wrap .img_wrap{
+    max-width: 500px;
+    height: 330px;
+    padding-bottom: 15px;
+}   
+.location .loca_cards .card_wrap .img_wrap img{
+    height: 100%;
+}
+.location .loca_cards .card_wrap .body_wrap h6{
+    font-size: 21px;
+    font-family: barlowSemibold;
+    padding: 15px 0px;
+}
+
+/************************************** LOCATION PAGE CSS END HERE ********************************************************/
+
+/************************************** THANKYOU PAGE CSS START HERE ********************************************************/
+.thank_msg{
+    padding: 65px 0px;
+}
+.thank_msg .card_wrap span{
+    font-size: 57px;
+    font-family: barlowSemiBold;
+}
+.thank_msg .card_wrap p{
+    font-size: 24px;
+}
+.thank_msg .card_wrap .btn_wrap a:nth-child(1){
+    margin-right: 15px;
+}
+
+/************************************** THANKYOU PAGE CSS END HERE ********************************************************/
+
+/********************************************  BOAT PAGE START HERE ******************************************* */
+.right_bt::-webkit-scrollbar {
+    width: 20px !important;
+    height: 4px !important;
+}
+
+ .right_bt::-webkit-scrollbar-thumb {
+    background: var(--blue);
+    border-radius: 5px;   
+}
+.brand_id {
+    text-transform: uppercase !important;
+}
+/* .forSale{
+    padding-top: 60px;
+} */
+.forSale .top_wraper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.forSale .top_wraper .top_text{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.forSale .top_wraper .dek_veiw{
+    width: 100%;
+}
+.forSale .top_filter {
+    display: flex;
+    justify-content: right;
+}
+.forSale .top_filter p {
+    padding: 8px 15px;
+    color: #4c4c4c;
+    width: 100%;
+    max-width: 90px;
+}
+
+.forSale .top_filter select {
+    padding: 8px 15px;
+    border: 1px solid #dfdfdf;
+    width: 100%;
+    max-width: 240px;
+    margin-right: 10px;
+}
+.forSale .inner_detail_wraper .ukhi_img {
+    width: 600px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.forSale .inner_detail_wraper .ukhi_img img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.forSale .new_chng {
+    display: flex;
+    border: 1px solid#cecece;
+    padding-right: 15px;
+}
+
+.forSale .new_chng .right_detail {
+    width: calc(100% - 600px);
+    padding-left: 25px;
+
+}
+
+.forSale .new_chng .year_se {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.forSale .new_chng .body_detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 20px;
+}
+
+.forSale .new_chng .body_detail .left_detail span {
+    font-family: barlowBold;
+    padding-left: 5px;
+}
+
+.forSale .new_chng .body_detail .right_btn a {
+    display: inline-block;
+    padding: 8px 25px;
+    font-size: 15px;
+    font-family: barlowBold;
+    background-color: transparent;
+    border: 1px solid #000;
+    color: #000;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+.forSale .left_tabs{
+    border-right: 1px solid #cfcfcf;
+    height: 100%;
+}
+
+.forSale .left_tabs a {
+    color: #141c20;
+    font-family: barlowBold;
+    font-size: 18px;
+}
+.forSale .text_mid .p_red {
+    color: #cf2b25;
+    font-family: barlowBold;
+    font-size: 22px;
+    padding: 7px 0px;
+}
+
+.boat_load_btn{
+    margin: 60px 0px;
+}
+
+
+/* side pannel accordian css */
+.forSale .applied_filter{
+    border-bottom: 2px solid #dfdfdf;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+.forSale .panel_main {
+    padding: 20px 34px 15px 50px;
+    border-bottom: 2px solid #dfdfdf;
+}
+
+.panel-title>a:before {
+    float: right !important;
+    font-family: FontAwesome;
+    content: "\f068";
+    color: #000;
+}
+
+.panel-title>a.collapsed:before {
+    float: right !important;
+    content: "\f067";
+    color: #000;
+}
+.panel-title>a:hover,
+.panel-title>a:active,
+.panel-title>a:focus {
+    text-decoration: none;
+    color: #000;
+}
+
+.parent_whole_wrap .littel_imgs {
+    height: 150px;
+    max-width: 230px;
+}
+
+.parent_whole_wrap .littel_imgs img {
+    height: 100%;
+}
+
+/* side pannel accordian css end */
+
+.inner_detail_wraper .bottom_p p+p {
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.inner_detail_wraper .bottom_p p {
+    position: relative;
+}
+
+.inner_detail_wraper .bottom_p p+p::before {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 15px;
+    top: 5px;
+    left: 0px;
+    background-color: #65686b;
+    transform: translate(-50%);
+}
+
+
+/* Range bar css */
+
+.ui-slider-horizontal {
+    height: 0.5em !important;
+}
+
+.ui-slider .ui-slider-handle {
+    width: 1em !important;
+    height: 1em !important;
+}
+
+.price-range-block {
+    margin: 30px 10px 0px 10px;
+}
+
+.sliderText {
+    margin-bottom: 30px;
+    border-bottom: 2px solid #b21015;
+    padding: 10px 0 10px 0px;
+    font-weight: bold;
+}
+
+.ui-slider-horizontal {
+    height: .5em;
+}
+
+.ui-slider-horizontal {
+    width: 100%;
+}
+
+.ui-widget-header {
+    background: #fe0011 !important;
+}
+
+.price-range-search {
+    width: 40.5%;
+    background-color: #f9f9f9;
+    border: 1px solid #6e6666;
+    min-width: 40%;
+    display: inline-block;
+    height: 32px;
+    border-radius: 5px;
+    float: left;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.price-range-field {
+    width: 20%;
+    min-width: 16%;
+    background-color: #f9f9f9;
+    border: 1px solid #6e6666;
+    color: black;
+    font-family: myFont;
+    font: normal 14px Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    height: 26px;
+    padding: 5px;
+}
+
+.search-results-block {
+    position: relative;
+    display: block;
+    clear: both;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default {
+    border: none !important;
+    border-radius: 50px !important;
+    background: #070e1e !important;
+}
+
+.ui-widget.ui-widget-content {
+    border-radius: 0px;
+    background-color: #d0d0d0;
+}
+
+/* Rangebar css end */
+/* custom chechkbox css */
+.container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 25px 0 5px 35px;
+}
+label.container.boat_detail_form {
+    padding: 20px 0 5px 35px;
+}
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 24px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background: transparent;
+    border: 1px solid #65686b;
+}
+/* When the checkbox is checked, add a blue background */
+
+.container input:checked~.checkmark {
+    background-color: transparent;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* Show the checkmark when checked */
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+/* Style the checkmark/indicator */
+
+.container .checkmark:after {
+    left: 9px;
+    top: 4px;
+    width: 7px;
+    height: 13px;
+    border: solid #fe0011;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* NEW FILTER DESIGN CSS */
+.inner_wrap_filter{
+    display: flex;
+    align-items: center;
+}
+.inner_wrap_filter a{
+    color: #000;
+}
+.inner_wrap_filter .left_btn{
+    border-right: 1px solid #D3D3D3;
+    padding: 11px 8px;
+}
+.inner_wrap_filter .left_btn a{
+    font-family: barlowBold;
+}
+
+.top_new_filter{
+    border-top: 1px solid #D3D3D3;
+    border-bottom: 1px solid #D3D3D3;
+    display: none;
+}
+.inner_wrap_filter .right_bt{
+    padding: 8px 3px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    overflow-x: auto;
+}
+.top_new_filter .inner_wrap_bt{
+    border: 1px solid #1d1c1c;
+    border-radius: 30px;
+}
+.top_new_filter .inner_wrap_bt a{
+    padding: 7px 10px;
+    display: inline-block;
+    min-width: 190px;
+    width:100%;
+    text-align: center;
+}
+.new_chng .body_detail .right_btn span{
+    display: inline-block;
+    font-size: 30px;
+    font-family: barlowLight;
+}
+.new_chng .body_detail .right_btn a:nth-child(4) {
+    background-color: #000;
+    color: #fff;
+}
+
+/* MODAL FILTER CSS */
+.modal.fade:not(.in).bottom .modal-dialog {
+	-webkit-transform: translate3d(0, 40%, 0);
+	transform: translate3d(0, 40%, 0);
+}
+.bottom_btn{
+    display: none;
+}
+.top_des_fil .close_btn{
+    display: none;
+    
+}
+.new_768 .close_btn{
+    display: block; 
+    width: 100%;
+    text-align: right;
+    border-bottom: 1px solid #dfdfdf; 
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+.new_768 .close_btn a{
+    color: #707070;
+    font-size: 14px;
+}
+.new_768{
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+    background-color: #fff;
+    max-width: 550px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px 0px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.new_768 .bottom_btn{
+     display: flex;
+}
+.top_des_fil .bottom_btn{
+    margin-top: 15px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    margin-bottom: 20px;
+}
+.top_des_fil .bottom_btn a{
+    color: #707070;
+    font-size: 14px;
+}
+.top_des_fil .bottom_btn a:nth-child(2){
+    background-color: #000;
+    width: 100%;
+    max-width: 175px;
+    text-align: center;
+    padding: 10px 0px;
+    display: inline-block;
+    color: #fff;
+}
+.mobile_sort{
+    display: none;
+}
+.mobile_sort .top_filter{
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 18px;
+}
+.mobile_sort .top_filter select{
+    border: 1px solid #dfdfdf !important;
+}
+.red_cell {
+    background: rgba(0, 0, 0, 0.2);
+    transition: 0.4s ease-in-out;
+}
+
+/* MEdia Queries of BOAT  Page */
+@media(max-width:1440px){
+    .forSale .applied_filter{
+        padding-left: 20px;
+        padding-bottom: 15px;
+    }
+    .forSale .panel_main{
+        padding: 15px 20px;
+    }
+    .forSale .inner_detail_wraper .ukhi_img{
+        width: 400px;
+    }
+    .forSale .new_chng .right_detail{
+        width: calc(100% - 400px);
+    }
+    .forSale .left_tabs a{
+        font-size: 16px;
+    }
+    .panel-title>a.collapsed:before{
+        margin-top: 8px;
+    }
+}
+@media(max-width:1100px){
+    .forSale .new_chng .body_detail{
+        flex-direction: column;
+    }
+}
+
+@media(max-width:991px) {
+    .forSale .new_chng {
+        flex-direction: column;
+    }
+    .forSale .new_chng .right_detail {
+        text-align: center;
+    }
+    .forSale .new_chng .year_se .right_text {
+        display: none;
+    }
+    .forSale .new_chng .body_detail {
+        flex-direction: column;
+    }
+    .forSale .new_chng .year_se {
+        justify-content: center;
+    }
+    .forSale .new_chng{
+        padding-right: 0px;
+    }
+    .forSale .inner_detail_wraper .ukhi_img{
+        width: 100%;
+    }
+    .forSale .new_chng .right_detail{
+        width: 100%;
+        padding: 0px 20px;
+    }
+
+    .left_side_carousel .owl-carousel .owl-nav button span{
+        padding: 0px 10px 7px 10px;
+    }
+    .left_side_carousel .blck_a a{
+        font-size: 21px;
+    }
+    .left_side_carousel .blck_a{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .left_side_carousel .main_right_wraper .rigth_calc .inner_calc h6{
+        font-size: 18px;
+    }
+}
+@media(max-width:768px){
+    .forSale .left_tabs {
+        border-right: none;
+        height: auto;
+    }
+    .forSale .top_des_fil{
+        display: none;
+    }
+    .top_new_filter{
+        display: block;
+    }
+    .mobile_sort{
+        display: block;
+    }
+    .forSale .dek_veiw{
+        display: none !important;
+    }
+}
+
+/********************************************  BOAT PAGE END HERE ******************************************* */
+
+/********************************************  BOAT DETAIL PAGE START HERE ******************************************* */
+.left_side_carousel .detail_wraper{
+    padding-top: 60px;
+}
+.left_side_carousel .detail_wraper .boat_variant{
+    margin-bottom: 20px;
+}
+
+.left_side_carousel .parent_whole_wrap {
+    padding-left: 80px;
+}
+.left_side_carousel .top_slider_sec{
+    /* border-bottom: 1px solid #b8b8b8; */
+    /* padding-bottom: 40px; */
+}
+.left_side_carousel .parent_whole_wrap .main_videoimg_wrap{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.left_side_carousel .main_videoimg_wrap .inner_img_wrap{
+    padding: 10px;
+}
+.left_side_carousel .main_videoimg_wrap .inner_img_wrap:first-child{
+    padding-left: 0px;
+}
+.left_side_carousel .main_videoimg_wrap .inner_img_wrap:last-child{
+    padding-right: 0px;
+}
+.left_side_carousel .blck_a {
+    padding: 30px 25px;
+}
+
+.left_side_carousel .blck_a a {
+    color: #141c1c;
+    font-family: barlowBold;
+    font-size: 27px;
+}
+
+.left_side_carousel .play_icon {
+    position: relative;
+}
+
+.left_side_carousel .play_icon::after {
+    content: "";
+    background-image: url('../images/play_btn.png');
+    background-repeat: no-repeat;
+    background-size: 80px;
+    background-position: center;
+    z-index: 999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+}
+
+.left_side_carousel .angle_icon::after {
+    content: "";
+    background-image: url('../images/360angle.png');
+    background-repeat: no-repeat;
+    background-size: 80px;
+    background-position: center;
+    z-index: 999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    transform: translate(-50%, -50%);
+}
+
+.left_side_carousel .play_icon::after img {
+    width: 100px;
+}
+
+.left_side_carousel .main_right_wraper .right_side_text {
+    padding: 6% 0px;
+}
+
+.left_side_carousel .bottom_btn {
+    text-align: center;
+    border-right: 1px solid #aaaaaa;
+}
+
+.left_side_carousel .bottom_btn .load {
+    background-color: #e2e2e2;
+    border-radius: 5px;
+    color: black;
+    font-family: barlowBold;
+    font-size: 18px;
+}
+
+.left_side_carousel .bottom_detail {
+    padding-bottom: 20px;
+}
+
+.left_side_carousel .bottom_detail h2 {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+/* PROPERTIES CSSS */
+.left_side_carousel .boat_properties{
+    padding: 50px 0px;
+    border-top: 1px solid #aaaaaa;
+}
+.left_side_carousel .boat_properties ul{
+    border-right: 1px solid #000;
+}
+.boat_properties .row .col-lg-4:last-child .card_wrap ul {
+    border-right: 0;
+}
+/* .left_side_carousel .boat_properties ul:last-child{
+    border-right: 0px;
+} */
+.left_side_carousel .boat_properties ul li{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 35px;
+    font-size: 20px;padding-bottom: 15px;
+}
+.left_side_carousel .boat_properties ul li .bold_right{
+    font-family: barlowBold;
+}
+
+
+.left_side_carousel .main_right_wraper {
+    width: 80%;
+    margin: 0 auto;
+}
+.left_side_carousel .main_right_wraper .light_p {
+    font-size: 16px;
+    color: #b0adae;
+}
+.left_side_carousel .right_spec_div{
+    padding-bottom: 15px;
+}
+
+.left_side_carousel .main_right_wraper .rigth_calc {
+    padding-bottom: 20px;
+}
+
+.left_side_carousel .main_right_wraper .rigth_calc .inner_calc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.left_side_carousel .main_right_wraper .rigth_calc .inner_calc h5{
+    font-family: barlowLight;
+}
+
+.left_side_carousel .main_right_wraper .rigth_calc .inner_calc:nth-child(1) {
+    padding-right: 10px;
+}
+
+.left_side_carousel .main_right_wraper .rigth_calc .inner_calc h6 {
+    font-family: barlowLight;
+}
+
+.left_side_carousel .main_right_wraper .right_side_text {
+    text-align: center;
+}
+
+.left_side_carousel .bg_red {
+    background-color: #fe0011;
+    border: 0px;
+    color: #fff;
+}
+
+.left_side_carousel .main_right_wraper .right_side_text p {
+    margin-top: 20px;
+    font-size: 22px;
+    font-family: barlowLight;
+}
+
+.left_side_carousel .main_right_wraper .form_wraper h4 {
+    padding-top: 25px;
+    padding-bottom: 1px;
+    font-size: 21px;
+
+}
+
+.left_side_carousel .main_right_wraper .right_form button {
+    text-align: center;
+    display: block;
+    margin: 35px auto;
+}
+
+.same_btn.bg_red.bt_detail_submit:hover {
+    background-color: #6e171f;
+    color: white;
+    border: transparent;
+}
+
+.left_side_carousel .main_right_wraper .right_form .top_chechk h4 {
+    font-family: barlowRegular;
+    color: #000000;
+}
+
+.left_side_carousel .main_right_wraper .right_form .enter_option {
+    border: none;
+    border-bottom: 1px solid #65686b;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.left_side_carousel .main_right_wraper .last_option h5 {
+    font-family: barlowRegular;
+    font-size: 16px;
+}
+
+.left_side_carousel .main_right_wraper .btn_wraper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    text-align: center;
+   
+}
+
+.left_side_carousel .main_right_wraper .btn_wraper a {
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 4%;
+    background-color: #000;
+}
+
+a.same_btn.bt_det_apply:hover {
+    background-color: #1c3f62;
+    color: white;
+    border: transparent;
+}
+
+.left_side_carousel .main_right_wraper .main_parent_specs li {
+    padding-bottom: 30px;
+}
+
+.left_side_carousel .main_parent_specs {
+    /* margin-bottom: 60px; */
+    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.left_side_carousel .main_parent_specs .li_bold span {
+    margin-right: 10px;
+}
+
+.left_side_carousel .owl-nav {
+    width: 100%;
+    position: absolute;
+}
+
+.left_side_carousel .owl-carousel .owl-nav button span {
+    font-size: 50px;
+    background-color: #d6d6d6 !important;
+    padding: 5px 15px 20px 15px;
+    vertical-align: middle;
+}
+
+button:focus {
+    outline: none;
+}
+
+.left_side_carousel .owl-theme .owl-nav [class*=owl-]:hover {
+    background: none;
+}
+
+.left_side_carousel .owl-theme .owl-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.boat_detail_owl.owl-prev{
+    position: absolute;
+    top: 50%;
+    left: -2px;
+    transform: translateY(-50%);
+    font-size: 40px !important;
+    }
+.boat_detail_owl.owl-next{
+    position: absolute;
+    top: 50%;
+    right: -2px;
+    transform: translateY(-50%);
+    font-size: 40px !important;
+    }
+.left_side_carousel .panel-group{
+    /* border-bottom: 2px solid #000; */
+    margin-bottom: 25px;
+    background-color: #dedede;
+}
+/* [type="radio"]:checked+#test11:after,
+[type="radio"]:not(:checked)+#test11:after {
+    content: '';
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    background: #1f63a9;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+} */
+
+.hideinp {
+    display: none;
+}
+
+.righti{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2px;
+    z-index: 10;
+    background-color: #aaaaaa;
+    width: 50px;
+    height: 80px;
+    text-align: center;
+    display: inline-block;
+    line-height: 80px;
+    color: #fff;
+}
+.lefti{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2px;
+    z-index: 10;
+    background-color: #aaaaaa;
+    width: 50px;
+    height: 80px;
+    text-align: center;
+    display: inline-block;
+    line-height: 80px;
+    color: #fff;
+}
+.left_side_carousel .slick-prev{
+    left: 20px;
+    z-index: 22;
+}
+.left_side_carousel .slick-slider{
+    margin-bottom: 0px;
+}
+.left_side_carousel .parent_whole_wrap .NavImages{
+    padding: 10px 10px 10px 0px;
+}
+
+
+/* SIMILAR SECTION CSS */
+.similar_boat{
+    padding: 65px 0px;
+}
+.similar_boat .top_heading{
+    padding-bottom: 40px;
+}
+.similar_boat .pic_sec .card_wrap{
+    max-width: 300px;
+}
+.similar_boat .pic_sec .img_wrap{
+    max-width: 300px;
+    height: 229px;
+}
+.similar_boat .pic_sec .img_wrap img{
+    height: 100%;
+}
+.similar_boat .pic_sec .text_wrap span{
+    font-size: 21px;
+    font-family: barlowMedium;
+}
+/********************************************  BOAT DETAIL PAGE END HERE ******************************************* */
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media(max-width:1440px){
+    .trailer .main_wraper .card_img {
+        max-width: 406px;
+        height: 400px;
+        margin: 0 auto;
+    }
+
+    .about_sale .text_wrap{
+        padding: 50px 20px;
+    }
+    .child_sec .inner_div{
+        align-items: normal;
+        flex-direction: column  ;
+    }
+    .child_sec .inner_div .img_wrap{
+        width: 100%;
+        max-width: 500px;
+        height: 500px;
+        margin-bottom: 20px;
+    }
+    .child_sec .inner_div .img_wrap img{
+        height: 100%;
+    }
+    .child_sec .inner_div .text_wrap{
+        width: 100%;
+        padding-left: 0px;
+    }
+}
+
+@media(max-width:1240px){
+
+}
+
+@media(max-width:1024px){
+
+    .heading h2{
+        font-size: 28px;
+    }
+    .heading h4{
+        font-size: 30px;
+    }
+
+    .brand_logo .main_wrap{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .brand_logo .brand_logo_wrap{
+        margin: 15px 25px;
+    }
+
+    
+    .service_option .inner_h{
+        padding: 15px 15px;
+    }
+    .service_option .main_wraper .card_wrap{
+        height: 100%;
+    }
+    .service_option .main_wraper .card_wrap .img_wrap{
+        height: 100%;
+    }
+    .service_option .main_wraper .card_wrap img{
+        height: 100%;
+    }
+
+
+}
+
+@media(max-width:991px){
+    .heading h1{
+        font-size: 30px;
+    }
+    .brand_logo{
+        padding: 45px 0px;
+    }
+    .heading h5{
+        font-size: 21px;
+    }
+
+
+    .trailer{
+        padding: 45px 0px;
+    }
+    .trailer .main_wraper .card_img{
+        height: 300px;
+        max-width: 350px;
+    }
+
+
+    .child_sec{
+        padding: 45px 0px;
+    }
+
+    .about_sale{
+        padding: 45px 0px;
+    }
+    .sales2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+    .about_banner .img_wrap{
+        min-height: 550px;
+    }
+
+
+    .service_banner .img_wrap{
+        min-height: 550px !important;
+    }
+    .service_process{
+        padding: 45px 0px;
+    }
+    .service_process .body_wraper .card_wraper{
+        margin-bottom: 20px;
+    }
+    .maintinance .bulet_wraper{
+        flex-direction: column;
+    }
+    .maintinance .img_wrap{
+        min-height: 450px;
+    }
+
+
+    .expert_part{
+        padding: 45px 0px;
+    }
+
+    .request_part{
+        padding: 45px 0px;
+    }
+
+
+    .left_side_carousel .parent_whole_wrap{
+        padding-left: 0px;
+    }
+
+    .auto_repair .black_text{
+        margin-top: 30px;
+    }
+
+    .service{
+        padding: 45px 0px;
+    }
+
+    footer{
+        padding: 45px 0px;
+    }
+    footer .lst_right{
+        text-align: center;
+        border-left: 0px;
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:768px){
+    .same_btn {
+        padding: 13px 30px;
+        font-size: 16px;
+    }
+    .banner .img_wrap{
+        min-height: 450px;
+    }
+
+    .maintinance .planing_sec{
+        padding: 50px 20px  ;
+    }
+
+    .location .loca_cards .card_wrap .img_wrap{
+        margin: 0 auto;
+    }
+    .location .loca_cards .card_wrap .body_wrap{
+        text-align: center;
+    }
+}
+
+@media(max-width:678px){
+
+    /*********************************** MENU STYLE CHANGE START HERE **************************************/
+    .nav_logo{
+        margin-left: 20px;
+    }
+    .right_data{
+        display: none;
+    }
+    .boats_btn {
+        display: none;
+    }
+    /* .main_parent_nav .main_wrap{
+        flex-direction: row-reverse;
+    } */
+    .menu_items_parent{
+        max-width: 100%;
+        left: -670px;
+    }
+    .veiw_side{
+        left: 0;
+    }
+    .main_parent_nav .main_wrap .toggle_btn{
+        border: none;
+    }
+    .menu_items_parent .menu_links .first_heading a{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menu_items_parent{
+        padding: 120px 0px 20px 0px;
+    }
+    .mob_none{
+        display: none;
+    }
+    .menu_items_parent .menu_links ul li+li{
+        /* padding-left: 5px; */
+    }
+    .menu_items_parent .menu_links .mob_none li{
+        padding-left: 15px;
+        padding-bottom: 12px;
+    }
+    .menu_items_parent .menu_links .first_heading{
+        font-size: 18px;
+    }
+    .menu_links ul{
+        border-bottom: 1px solid #fff;
+        padding: 0px 44px 0px 20px;
+    }
+
+    /*********************************** MENU STYLE CHANGE START HERE **************************************/
+
+    /************************************ NORMAL PAGES CSS START HERE ************************************/
+    .heading h2{
+        font-size: 25px;
+    }
+    .banner .btn_wrap a{
+        font-size: 16px;
+    }
+
+    .service .text_wrap{
+        max-width: 360px;
+        padding: 20px 20px;
+    }
+    .col_wraper{
+        text-align: center;
+    }
+
+
+    .child_sec .inner_div .img_wrap{
+        height: 400px;
+    }
+
+
+    .about_banner .img_wrap{
+        min-height: 890px;
+    }
+
+    .service_banner .img_wrap{
+        min-height: 690px !important;
+    }
+    .maintinance .rate_detail{
+        flex-direction: column;
+    }
+    .maintinance .tabel_section .rate_list{
+        max-width: 100%;
+    }
+
+    .request_part .form_wraper .label_h{
+        font-size: 20px;
+    }
+
+
+    .apply_today .upload_div .btn_wrap{
+        max-width: 165px;
+    }
+    .apply_today .upload_div .btn_wrap a{
+        font-size: 16px;
+    }
+
+}
+
+@media(max-width:540px){
+    .service_option .red_ul{
+        flex-direction: column;
+    }
+}
