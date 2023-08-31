@@ -105,7 +105,7 @@ html {
     background-color: #e4e4e4;
     padding: 20px 40px;
     font-size: 18px;
-    font-family: barlowBold;
+    font-family: karlaBOld;
     color: #000;
     display: inline-block;
     border: none;
@@ -116,7 +116,7 @@ html {
 
 .load_btn:hover {
     color: #000000;
-    background-color: #265170;
+    background-color: #b29c3f;
 }
 .yellow_btn {
     background-color: var(--yellow);
@@ -127,6 +127,7 @@ html {
     letter-spacing: 1px;
     transition: 0.3s ease-in;
     border-radius: 5px;
+    border: 0px;
     }
     .yellow_btn:hover {
     color: var(--blue);
@@ -421,7 +422,7 @@ select.form-control:not([size]):not([multiple]){
 }
 .navbar{
     padding: 1rem 9rem;
-    z-index: 1;
+    z-index: 5;
     width: 100%;
     transition: all 0.5s ease-in-out;
     background-color: #efedea;
@@ -1458,6 +1459,12 @@ footer .soc_icon i{
     text-align: center;
     padding-top: 10px;
 }
+.same_brand_boat .body_wraper .text_wrap h5{
+    color: var(--blue);
+} 
+.same_brand_boat .body_wraper .text_wrap p{
+    color: #7a7676;
+}
 .same_brand_boat .body_wraper .text_wrap .red_value{
     color: #fe0011;
     display: inline-block;
@@ -1782,509 +1789,6 @@ footer .soc_icon i{
 
 
 /******************************** ABOUT PAGE CSS END HERE ********************************/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/********************************* ABOUT US PAGE START HERE *********************************/
-/* BANNER SECTION CSS */
-.about_banner .text_wrap p{
-    color: #fff;
-}
-.about_banner .text_wrap{
-    max-width: 980px;
-    padding: 40px 30px;
-}
-.about_banner .text_wrap h1{
-    padding-bottom: 20px;
-}
-.about_banner .text_wrap p+p{
-    padding-top: 15px;
-}
-
-/* CHILD SEC START HERE */
-.child_sec{
-    padding: 65px 0px;
-}
-.child_sec .inner_div{
-    display: flex;
-    align-items: center;
-}
-.child_sec .inner_div .img_wrap{
-   width: 280px;
-    /* width: 100%; */
-}.child_sec .inner_div .text_wrap{
-    /* max-width: 540px; */
-    width: calc(100% - 280px);
-    padding-left: 20px;
-}
-
-/* ABOUT SALE SECTION CSS */
-.about_sale{
-    padding: 65px 0px;
-}
-.about_sale .text_wrap{
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 130px 20px;
-}
-.about_sale .text_wrap p{
-    padding: 20px 0px;
-}
-
-/******************************** ABOUT US PAGE END HERE ********************************/
-
-/******************************** SERVICE PAGE START HERE ********************************/
-.service_banner .text_wrap{
-    max-width: 1000px;
-    padding: 40px 50px;
-}
-.service_banner .text_wrap h1{
-    padding-bottom: 15px;
-}
-.service_banner .text_wrap p{
-    padding: 15px 0px;
-}
-.service_banner .text_wrap p, .service_banner .text_wrap span{
-    color: #fff;
-}
-.service_banner .text_wrap .journey{
-    font-size: 27px;
-}
-.service_banner .bold_span{
-    font-size: 21px;
-    font-weight: bold;
-}
-
-/* SERVICE PROCESS CSS */
-.service_process{
-    padding: 65px 0px;
-}
-.service_process .top_heading{
-    text-align: center;
-}
-.service_process .body_wraper{
-    padding-top: 30px;
-}
-.service_process .body_wraper  .card_wraper{
-    display: flex;
-}
-.service_process .card_wraper .red_box span{
-    display: inline-block;
-    padding: 8px 18px;
-    background-color: #fe0011;
-    text-align: center;
-    font-size: 26px;
-    color: #fff;
-}
-.service_process .card_wraper .text_wrap{
-    padding-left: 20px;
-}
-.service_process .card_wraper .text_wrap .min_head{
-    font-size: 24px;
-    display: inline-block;
-    padding-bottom: 25px;
-    font-weight: 500;
-    line-height: 0px;
-}
-
-/* MAINTINNACE SECTION CSS */
-.maintinance .img_wrap{
-    position: relative;
-    padding-top: 35%;
-}
-.maintinance .img_wrap img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-.maintinance .planing_sec{
-    max-width: 1000px;
-    margin: 0 auto;
-    background-color: #e3e3e3;
-    padding: 70px 120px;
-    padding-bottom: 130px;
-    margin-top: -150px;
-    position: relative;
-}
-.maintinance .planing_sec::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 68%, rgba(255, 255, 255, 1) 95%);
-    z-index: 0;
-}
-.maintinance .planing_sec .inner_wraper{
-    position: relative;
-    z-index: 1;
-}
-.maintinance .planing_sec .inner_wraper h5{
-    font-family: barlowRegular;
-    padding: 15px 0px;
-}
-.maintinance .planing_sec .inner_wraper .car{
-    font-size: 18px;
-    font-family: barlowBold;
-}
-.maintinance .planing_sec h3{
-    padding-bottom: 10px;
-}
-.maintinance .bulet_wraper{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 30px;
-}
-.maintinance .rate_detail{
-    display: flex;
-    justify-content: space-between;
-}
-.maintinance .tabel_section .rate_list{
-    width: 100%;
-    max-width: 331px;
-}
-.maintinance .tabel_section .additional{
-    max-width: 100%;
-    margin-top: 30px;
-}
-.maintinance .tabel_section .rate_list h5{
-    padding-bottom: 15px;
-}
-.maintinance table{
-    width: 100%;
-}
-.maintinance .tabel_section td{
-    padding: 5px 10px;
-}
-.maintinance table, tr, td{
-    border: 1px solid #000;
-   
-}
-
-/* SERVICE_OPTION SECTION CSS */
-.service_option .text_wrap{
-    height: 100%;
-
-}
-.service_option .inner_h{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0px 60px;
-}
-.service_option .inner_h h3{
-    padding-bottom: 15px;
-}
-.service_option .red_ul{
-    display: flex;
-    padding-top: 15px;
-}
-.service_option .red_ul li{
-    padding-bottom: 10px;
-}
-.service_option .red_ul li span{
-    background-color: #fe0011;
-    display: inline-block;
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
-    margin-right: 10px;
-    text-align: center;
-    color: #fff;
-}
-.service_option .red_ul ul{
-    list-style-position: outside;
-}
-
-/* WASH SECTION CSS START */
-.wash_sec .bullet_point ul{
-    background-image: linear-gradient(to right, #000 10%, rgba(255, 255, 255, 0) 0%);
-    background-position: 0 14px;
-    background-size: 10px 1px;
-    background-repeat: repeat-x;
-    width: 100%;
-    height:25px;
-}
-.wash_sec .bullet_point ul li span{
-    background: #e3e3e3;
-    padding-right: 10px
-}
-.wash_sec .bullet_point ul li span+span{
-    float: right;
-    padding-left: 10px
-}
-
-/* SERVICE FORM SECTION CSS */
-.service_form{
-    padding: 65px 0px;
-    background-color: #dedede;
-}
-.service_form h2{
-    padding-bottom: 30px;
-}
-
-/* OUR TEAM SECTION CSS */
-.our_team .main_wrap .text_wrap p{
-    color: #fff;
-}
-.our_team .text_wrap{
-    padding: 45px 60px;
-}
-
-/******************************** SERVICE PAGE END HERE ********************************/
-
-/******************************** PARTS PAGE START HERE ********************************/
-/* EXPERT SECTION CSS */
-.expert_part{
-    padding: 65px 0px;
-}
-
-/* REQUEST PARTS CSS */
-.request_part{
-    padding: 65px 0px;
-    background-color: #dedede;
-}
-.request_part p{
-    padding: 20px 0px;
-}
-.request_part .form_wraper .label_h{
-    font-size: 24px;
-    font-family: barlowBold;
-}
-
-/******************************** PARTS PAGE END HERE ********************************/
-
-/******************************** SERVICE AGREEMENT PAGE START HERE ********************************/
-/* AGREEMENT SECTION CSS */
-.agreement{
-    padding: 65px 0px;
-}
-.agreement .top_heading h4{
-    padding-bottom: 30px;
-}
-.agreement .body_wraper{
-    max-width: 1380px;
-    margin: 0 auto;
-}
-.agreement .body_wraper .card_wraper{
-    margin-bottom: 30px;
-}
-.agreement .body_wraper .img_wraper {
-    max-width: 660px;
-    height: 400px;
-}
-.agreement .body_wraper .img_wraper img{
-    height: 100%;
-}
-.agreement .body_wraper .heading_wraper .titel_b{
-    display: inline-block;
-    font-size: 27px;
-    font-family: barlowMedium;
-    color: #000;
-    padding-top: 15px;
-}
-
-/******************************** SERVICE AGREEMENT PAGE END HERE ********************************/
-
-/************************************** BLOG PAGE CSS START HERE ********************************************************/
-/* blog css */
-.blog{
-    padding: 60px 0px;
-}
-.blog .top_text{
-    padding-bottom: 30px;
-}
-.blog .post_blog {
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-.post_blog .p_bars{
-    padding: 10px 0px;
-}
-.blog .nav-pills{
-    justify-content: center;
-}
-.nav-pills .nav-link.active{
-    border: 1px solid transparent !important;
-    background-color: #fe0011;
-    color: #fff !important;
-}
-.blog .nav-pills .nav-link{
-    border: 1px solid #000000;
-    border-radius: 0px !important;
-    color: #000000;
-    font-family: barlowBold;
-}
-.blog .nav-item{
-    padding: 0px 10px;
-}
-.blog .post_card .img_wrap{
-    height: 330px;
-    max-width: 500px;
-}
-.blog .post_card .img_wrap img{
-    height: 100%;
-}
-
-/* MEDIA QUERIES */
-@media(max-width:1366px){
-    .blog {
-        padding: 45px 0px;
-    }
-}
-/************************************** BLOG PAGE CSS END HERE ********************************************************/
-
-
-
-/************************************** CAREER PAGE CSS START HERE ********************************************************/
-/* CAREER BANNER CSS */
-.career_banner{
-    padding: 65px 0px;
-}
-.career_banner p{
-    padding: 20px 0px;
-    font-size: 24px;
-}
-
-/* AUTO REPAIR CSS  */
-.auto_repair{
-    padding: 65px 0px;
-}
-.auto_repair p{
-    padding: 20px 0px;
-}
-.auto_repair .black_text{
-    background-color: #000;
-    padding: 30px 48px;
-    color: #fff;
-}
-.auto_repair .black_text ul li{
-    padding-bottom: 10px;
-}
-.auto_repair .black_text h2{
-    padding-bottom: 20px;
-}
-.auto_repair .black_text .text_wraper span{
-    font-size: 24px;
-    font-family: barlowLight;
-}
-
-/* APPLY TODAY SECTION CSS */
-
-.apply_today{
-    background-color: #dedede;
-    padding: 65px 0px;
-}
-.apply_today .top_text h4{
-    padding-bottom: 30px;
-}
-.apply_today .upload_div{
-    background-color: #fff;
-}
-.apply_today .upload_div input{
-    opacity: 0;
-    z-index: 10;
-    position: absolute;
-}
-.apply_today .upload_div .btn_wrap {
-    background-color: #000;
-    width: 100%;
-    max-width: 200px;
-    display: inline-block;
-    padding: 10px 0px;
-    text-align: center;
-    margin-right: 15px;
-}
-.apply_today .upload_div .btn_wrap a{
-    color: #fff;
-
-
-}
-
-
-
-/************************************** CAREER PAGE CSS END HERE ********************************************************/
-
-/************************************** LOCATION PAGE CSS START HERE ********************************************************/
-.location{
-    padding: 65px 0px;
-}
-.location .main_wraper .top_heading p{
-    font-size: 24px;
-    font-family: barlowLight;
-    padding: 25px 0px;
-}
-.location .loca_cards .card_wrap .img_wrap{
-    max-width: 500px;
-    height: 330px;
-    padding-bottom: 15px;
-}   
-.location .loca_cards .card_wrap .img_wrap img{
-    height: 100%;
-}
-.location .loca_cards .card_wrap .body_wrap h6{
-    font-size: 21px;
-    font-family: barlowSemibold;
-    padding: 15px 0px;
-}
-
-/************************************** LOCATION PAGE CSS END HERE ********************************************************/
-
-/************************************** THANKYOU PAGE CSS START HERE ********************************************************/
-.thank_msg{
-    padding: 65px 0px;
-}
-.thank_msg .card_wrap span{
-    font-size: 57px;
-    font-family: barlowSemiBold;
-}
-.thank_msg .card_wrap p{
-    font-size: 24px;
-}
-.thank_msg .card_wrap .btn_wrap a:nth-child(1){
-    margin-right: 15px;
-}
-
-/************************************** THANKYOU PAGE CSS END HERE ********************************************************/
-
 /********************************************  BOAT PAGE START HERE ******************************************* */
 .right_bt::-webkit-scrollbar {
     width: 20px !important;
@@ -2301,15 +1805,19 @@ footer .soc_icon i{
 /* .forSale{
     padding-top: 60px;
 } */
-.forSale .top_wraper{
+/* .forSale .top_wraper{
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
+} */
 .forSale .top_wraper .top_text{
     width: 100%;
     padding-top: 20px;
     padding-bottom: 30px;
+}
+.forSale .top_wraper .top_text h4{
+    font-family: street;
+    color: var(--blue);
 }
 .forSale .top_wraper .dek_veiw{
     width: 100%;
@@ -2369,7 +1877,7 @@ footer .soc_icon i{
 }
 
 .forSale .new_chng .body_detail .left_detail span {
-    font-family: barlowBold;
+    font-family: karlaBold;
     padding-left: 5px;
 }
 
@@ -2377,10 +1885,10 @@ footer .soc_icon i{
     display: inline-block;
     padding: 8px 25px;
     font-size: 15px;
-    font-family: barlowBold;
+    font-family: karlaBold;
     background-color: transparent;
     border: 1px solid #000;
-    color: #000;
+    color: var(--blue);
     margin-bottom: 10px;
     width: 100%;
     text-align: center;
@@ -2391,13 +1899,13 @@ footer .soc_icon i{
 }
 
 .forSale .left_tabs a {
-    color: #141c20;
-    font-family: barlowBold;
+    color: var(--blue);
+    font-family: karlaBold;
     font-size: 18px;
 }
 .forSale .text_mid .p_red {
     color: #cf2b25;
-    font-family: barlowBold;
+    font-family: karlaBold;
     font-size: 22px;
     padding: 7px 0px;
 }
@@ -2408,14 +1916,24 @@ footer .soc_icon i{
 
 
 /* side pannel accordian css */
+.forSale .top_search input{
+    border: 1px solid var(--blue);
+    padding: 10px 10px;
+    width: 100%;
+}
+.forSale .top_search input::placeholder{
+    color: #000;
+    font-family: karlaMedium;
+}
 .forSale .applied_filter{
     border-bottom: 2px solid #dfdfdf;
-    padding-left: 50px;
+    padding-left: 10px;
     padding-top: 30px;
     padding-bottom: 15px;
+    padding-right: 30px;
 }
 .forSale .panel_main {
-    padding: 20px 34px 15px 50px;
+    padding: 20px 34px 15px 10px;
     border-bottom: 2px solid #dfdfdf;
 }
 
@@ -2423,19 +1941,19 @@ footer .soc_icon i{
     float: right !important;
     font-family: FontAwesome;
     content: "\f068";
-    color: #000;
+    color: var(--blue);
 }
 
 .panel-title>a.collapsed:before {
     float: right !important;
     content: "\f067";
-    color: #000;
+    color: var(--blue);
 }
 .panel-title>a:hover,
 .panel-title>a:active,
 .panel-title>a:focus {
     text-decoration: none;
-    color: #000;
+    color: var(--blue);
 }
 
 .parent_whole_wrap .littel_imgs {
@@ -2448,6 +1966,33 @@ footer .soc_icon i{
 }
 
 /* side pannel accordian css end */
+
+
+.forSale .top_heading{
+    text-align: center;
+}
+.forSale .top_heading h2{
+    font-family: karlaRegular;
+    padding-bottom: 30px;
+}
+.forSale  .card_wrap .img_wrap{
+    max-width: 440px;
+    margin: 0 auto;
+    height: 280px;
+}
+.forSale  .img_wrap img{
+    height: 100%;
+}
+.forSale  .text_wrap{
+    text-align: center;
+    padding-top: 10px;
+}
+.forSale  .text_wrap .red_value{
+    color: #fe0011;
+    display: inline-block;
+    font-family: karlaBold;
+    font-size: 19px;
+}
 
 .inner_detail_wraper .bottom_p p+p {
     margin-left: 10px;
@@ -2477,8 +2022,9 @@ footer .soc_icon i{
 }
 
 .ui-slider .ui-slider-handle {
-    width: 1em !important;
-    height: 1em !important;
+    width: 0.7em !important;
+    height: 1.6em !important;
+    top: -10px;
 }
 
 .price-range-block {
@@ -2487,7 +2033,7 @@ footer .soc_icon i{
 
 .sliderText {
     margin-bottom: 30px;
-    border-bottom: 2px solid #b21015;
+    border-bottom: 2px solid #b29c3f;
     padding: 10px 0 10px 0px;
     font-weight: bold;
 }
@@ -2501,7 +2047,7 @@ footer .soc_icon i{
 }
 
 .ui-widget-header {
-    background: #fe0011 !important;
+    background: #b29c3f !important;
 }
 
 .price-range-search {
@@ -2545,7 +2091,8 @@ footer .soc_icon i{
 
 .ui-widget.ui-widget-content {
     border-radius: 0px;
-    background-color: #d0d0d0;
+    background-color: #e7e3e3;
+    border-color: #e7e3e3;
 }
 
 /* Rangebar css end */
@@ -2584,7 +2131,7 @@ label.container.boat_detail_form {
 /* When the checkbox is checked, add a blue background */
 
 .container input:checked~.checkmark {
-    background-color: transparent;
+    background-color: var(--blue);
 }
 /* Create the checkmark/indicator (hidden when not checked) */
 
@@ -2605,7 +2152,7 @@ label.container.boat_detail_form {
     top: 4px;
     width: 7px;
     height: 13px;
-    border: solid #fe0011;
+    border: solid #fff;
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -2666,9 +2213,7 @@ label.container.boat_detail_form {
 	-webkit-transform: translate3d(0, 40%, 0);
 	transform: translate3d(0, 40%, 0);
 }
-.bottom_btn{
-    display: none;
-}
+
 .top_des_fil .close_btn{
     display: none;
     
@@ -2829,19 +2374,36 @@ label.container.boat_detail_form {
 /********************************************  BOAT PAGE END HERE ******************************************* */
 
 /********************************************  BOAT DETAIL PAGE START HERE ******************************************* */
-.left_side_carousel .detail_wraper{
-    padding-top: 60px;
-}
+
 .left_side_carousel .detail_wraper .boat_variant{
     margin-bottom: 20px;
 }
-
 .left_side_carousel .parent_whole_wrap {
-    padding-left: 80px;
+    border-right: 1px solid #d7d7d7;
+    padding-bottom: 40px;
 }
-.left_side_carousel .top_slider_sec{
-    /* border-bottom: 1px solid #b8b8b8; */
-    /* padding-bottom: 40px; */
+/* .left_side_carousel .top_slider_sec{
+} */
+.left_side_carousel .text_descrip {
+    padding-top: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    border-bottom: 1px solid #d7d7d7;
+}
+.left_side_carousel .main_slider_wrap h2{
+    font-family: karlaLight;
+    text-align: center;
+    padding-bottom: 20px;
+    color: var(--blue);
+}
+.left_side_carousel .text_descrip p{
+    padding-bottom: 15px;
+}
+.left_side_carousel .specs_sec{
+    padding: 20px 0px;
+    padding-top: 30px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 .left_side_carousel .parent_whole_wrap .main_videoimg_wrap{
     display: flex;
@@ -2911,17 +2473,44 @@ label.container.boat_detail_form {
 
 .left_side_carousel .bottom_btn {
     text-align: center;
-    border-right: 1px solid #aaaaaa;
+    
+}
+.load_more{
+    display: none;
 }
 
 .left_side_carousel .bottom_btn .load {
     background-color: #e2e2e2;
     border-radius: 5px;
     color: black;
-    font-family: barlowBold;
+    font-family: karlaBold;
     font-size: 18px;
+    padding: 15px 30px;
+    display: inline-block;
 }
-
+.left_side_carousel .bullet_point {
+    max-width: 405px;
+    margin-bottom: 40px;
+}
+.left_side_carousel .bullet_point h5{
+    padding-bottom: 20px;
+}
+.left_side_carousel .bullet_point ul li{
+    background-image: linear-gradient(to right, #000 10%, rgba(255, 255, 255, 0) 0%);
+    background-position: 0 14px;
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
+    width: 100%;
+    font-size: 21px;
+}
+.left_side_carousel .bullet_point ul li span{
+    background: #fff;
+    padding-right: 10px
+}
+.left_side_carousel .bullet_point ul li span+span{
+    float: right;
+    padding-left: 10px
+}
 .left_side_carousel .bottom_detail {
     padding-bottom: 20px;
 }
@@ -2934,7 +2523,7 @@ label.container.boat_detail_form {
 /* PROPERTIES CSSS */
 .left_side_carousel .boat_properties{
     padding: 50px 0px;
-    border-top: 1px solid #aaaaaa;
+    /* border-top: 1px solid #aaaaaa; */
 }
 .left_side_carousel .boat_properties ul{
     border-right: 1px solid #000;
@@ -2970,6 +2559,7 @@ label.container.boat_detail_form {
 
 .left_side_carousel .main_right_wraper .rigth_calc {
     padding-bottom: 20px;
+    padding-top: 30px;
 }
 
 .left_side_carousel .main_right_wraper .rigth_calc .inner_calc {
@@ -2979,7 +2569,10 @@ label.container.boat_detail_form {
     padding-bottom: 10px;
 }
 .left_side_carousel .main_right_wraper .rigth_calc .inner_calc h5{
-    font-family: barlowLight;
+    font-family: karlaLight;
+}
+.left_side_carousel .main_right_wraper .rigth_calc .inner_calc h5 a{
+    color: #a02a2a;
 }
 
 .left_side_carousel .main_right_wraper .rigth_calc .inner_calc:nth-child(1) {
@@ -2987,7 +2580,7 @@ label.container.boat_detail_form {
 }
 
 .left_side_carousel .main_right_wraper .rigth_calc .inner_calc h6 {
-    font-family: barlowLight;
+    font-family: karlaLight;
 }
 
 .left_side_carousel .main_right_wraper .right_side_text {
@@ -3005,11 +2598,28 @@ label.container.boat_detail_form {
     font-size: 22px;
     font-family: barlowLight;
 }
+.left_side_carousel .sale_prof{
+    max-width: 430px;
+    margin: 0 auto;
+    border: 1px solid #817f7f;
+    text-align: center;
+    padding: 20px 15px;
+}
+.left_side_carousel .sale_prof .img_wrap{
+    max-width: 130px;
+    margin: 0 auto;
+}
+
+.left_side_carousel .sale_prof .text_wrap span{
+   font-family:  karlaLight;
+}
 
 .left_side_carousel .main_right_wraper .form_wraper h4 {
     padding-top: 25px;
     padding-bottom: 1px;
-    font-size: 21px;
+    font-size: 24px;
+    color: var(--blue);
+    font-family: karlaBold;
 
 }
 
@@ -3026,7 +2636,7 @@ label.container.boat_detail_form {
 }
 
 .left_side_carousel .main_right_wraper .right_form .top_chechk h4 {
-    font-family: barlowRegular;
+    font-family: karlaRegular;
     color: #000000;
 }
 
@@ -3035,6 +2645,10 @@ label.container.boat_detail_form {
     border-bottom: 1px solid #65686b;
     width: 85%;
     margin: 0 auto;
+}
+.left_side_carousel .main_right_wraper .form_wraper .make_offer .first_la {
+    border: 0px;
+    border-bottom: 1px solid #686565;
 }
 
 .left_side_carousel .main_right_wraper .last_option h5 {
@@ -3056,7 +2670,9 @@ label.container.boat_detail_form {
     max-width: 400px;
     width: 100%;
     margin-bottom: 4%;
-    background-color: #000;
+    background-color: #161845;
+    border-radius: 2px;
+    font-family: karlaBold;
 }
 
 a.same_btn.bt_det_apply:hover {
@@ -3088,7 +2704,6 @@ a.same_btn.bt_det_apply:hover {
 
 .left_side_carousel .owl-carousel .owl-nav button span {
     font-size: 50px;
-    background-color: #d6d6d6 !important;
     padding: 5px 15px 20px 15px;
     vertical-align: middle;
 }
@@ -3209,9 +2824,17 @@ button:focus {
     font-family: barlowMedium;
 }
 /********************************************  BOAT DETAIL PAGE END HERE ******************************************* */
-
-
-
+.left_side_carousel .main_right_wraper .contact_num a{
+    font-size: 30px;
+    font-family: karlaMedium;
+    color: var(--blue);
+    padding: 30px 0px;
+}
+.left_side_carousel .main_right_wraper .contact_num{
+    border-top: 1px solid #d7d7d7;
+    border-bottom: 1px solid #d7d7d7;
+    text-align: center;
+}
 
 
 

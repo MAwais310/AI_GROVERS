@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h4, initial-scale=1.0">
+    <title>ATC BOATS</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link  rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"  crossorigin="anonymous"  referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+    <!-- HEADER SECTION START -->
+    <header>
+        <div class="top_nav">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-10 m-auto">
+                        <div class="main_wrap">
+                            <div class="left_search">
+                                <!-- <form action="/inventory/boats_search" method="POST" class="form-inline my-2 my-lg-0 nav_search">
+                                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                                    <input class="form-control mr-sm-2 boat_search" type="search" placeholder="SEARCH" name="search_val" value="">
+                                </form> -->
+                                <span>500 South Main Street | Freeport, NY 11520</span>
+                            </div>
+                            <div class="right_one">
+                                <span>OFFICE 516.546.8880 | SALES 516.771.7020</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_nav">
+            <nav class="navbar navbar-expand-lg navbar-light navbre">
+                <div class="left_nav d-flex align-items-center  ">
+                    <div class="pentagon">
+                        <div class="logo_div">
+                            <a class="" href="/"><img src="./assets/images/index/logo.png" alt="logo"></a>
+                        </div>
+                    </div>  
+                </div>
+                    <button class="navbar-toggler collapsed btcCC" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="span_line"> </span>
+                    <span class="span_line"> </span>
+                    <span class="span_line"> </span>
+                </button> 
+                <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+                    <div class="nav_right">
+                        <ul class="navbar-nav main_nav_sec nav_items">	
+                            <li class="megaMenu mobile_btn_inven nav_link nav_bg">
+                                <a href="javascript:(void)" class=" nav-link inventory nabar_link boat_nav_link"> INVENTORY <i class="fa fa-angle-down dropdown_arrow "></i></a>
+                                <div class="subnav mega_sub">
+                                    <div class="main_wrap">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-xl-8 m-auto">
+                                                <div class="innner_wraper">
+                                                    <div class="row">
+                                                        <div class="col-xl-4">
+                                                            <a href="javascript:void()">
+                                                                <div class="card_wrap">
+                                                                    <div class="img_wap">
+                                                                        <img src="./assets/images/index/default_boat_image.png" alt="">
+                                                                    </div>
+                                                                    <div class="text_wrap">
+                                                                        <p>PONTOON BOATS</p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-xl-4">
+                                                            <a href="javascript:void()">
+                                                                <div class="card_wrap">
+                                                                    <div class="img_wap">
+                                                                        <img src="./assets/images/index/default_boat_image.png" alt="">
+                                                                    </div>
+                                                                    <div class="text_wrap">
+                                                                        <p>DECK BOATS</p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-xl-4">
+                                                            <a href="javascript:void()">
+                                                                <div class="card_wrap">
+                                                                    <div class="img_wap">
+                                                                        <img src="./assets/images/index/default_boat_image.png" alt="">
+                                                                    </div>
+                                                                    <div class="text_wrap">
+                                                                        <p>PRE-OWNED BOATS</p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-xl-4">
+                                                            <a href="javascript:void()">
+                                                                <div class="card_wrap">
+                                                                    <div class="img_wap">
+                                                                        <img src="./assets/images/index/default_boat_image.png" alt="">
+                                                                    </div>
+                                                                    <div class="text_wrap">
+                                                                        <p>OUTBOARD MOTORS</p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-xl-4">
+                                                            <a href="javascript:void()">
+                                                                <div class="card_wrap">
+                                                                    <div class="img_wap">
+                                                                        <img src="./assets/images/index/default_boat_image.png" alt="">
+                                                                    </div>
+                                                                    <div class="text_wrap">
+                                                                        <p>ELECTRIC MOTORS </p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-xl-4">
+                                                            <a href="javascript:void()">
+                                                                <div class="card_wrap">
+                                                                    <div class="img_wap">
+                                                                        <img src="./assets/images/index/default_boat_image.png" alt="">
+                                                                    </div>
+                                                                    <div class="text_wrap">
+                                                                        <p>TRAILERS</p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    </div>
+                                </div> 
+                            </li>
+                            <li class="megaMenu mobile_btn_inven">
+                                <a href="javascript:(void)" class=" nav-link inventory nabar_link boat_nav_link">CLEARANCE </a>
+                            </li>
+                            <li class="megaMenu mobile_btn_inven  nav_link nav_bg">
+                                <a href="javascript:(void)" class=" nav-link inventory nabar_link boat_nav_link">SERVICES</a>
+                                <!-- <div class="subnav">
+                                    <div class="subnav_item">
+                                        <a href="javascript:void()">SERVICE</a>
+                                        <a href="javascript:void()">PARTS </a>
+                                        <a href="javascript:void()">FINANCING</a>
+                                        <a href="javascript:void()">CAREERS</a>
+                                    </div>
+                                </div> -->
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="navbar-nav mt-2 mt-lg-0 main_nav_sec nav_items">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/service">ABOUT US <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/financing">INFO HUB</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">CONTACT US</a>
+                        </li>
+                    </ul>
+    
+                    <!-- {{!-- FOR MOBILE VEIW ONLY MEGA MENU --}} -->
+                <div class="mobile_nav">
+                    <ul>
+                    <li class="submenu_li1">
+                        <a href="javascript:void()" class="btn_item  d-flex justify-content-center">INVENTORY <span><i class="fa-solid fa-angle-down dropdown_arrow" id="angle_up"></i></span> </a>
+                        <ul>
+                            <li><a href="" class="boats_item1 boat_clik" style="display: none;" >NEW BOATS </a></li>
+                            <li><a href="" class="boats_item1 foil_clik" style="display: none;">PRE-OWNED BOATS</a></li>
+                            </ul>
+                    </li>	
+                    <li><a href="/inventory/engines">CLEARANCE </a></li>
+                    <!-- <li class="submenu_li4">
+                        <a href="javascript:void()" class="btn_item4 d-flex justify-content-center align-items-center"  >SERVICES </a>
+                        <ul>
+                        <li><a href="" class="boats_item4 boat_clik" style="display: none;" >SERVICE </a></li>
+                        <li><a href="" class="boats_item4 foil_clik" style="display: none;">PART</a></li>
+                        <li><a href="" class="boats_item4 boat_clik" style="display: none;" >FINANCING </a></li>
+                        </ul>
+                    </li>	 -->
+                    <li> <a href="/rental">STORAGE </a> </li>
+                    <li> <a href="https://www.lmgdrc.ca/application/index.asp?" target="_blank">ABOUT US </a> </li>
+                    <li><a href="/inventory/paddlesports">INFO HUB </a></li>	
+                    <li><a href="/contact">CONTACT US </a></li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- HEADER SECTION END -->
+
+    <!-- BOAT DETAIL SECTION START -->
+    <section class="left_side_carousel">
+        <div class="detail_wraper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 m-auto">
+                        <div class="row">
+                            <div class="col-xl-8">
+                                <div class="parent_whole_wrap">
+                                    <div class="main_slider_wrap ">
+                                        <div class="top_slider_sec" >
+                                            <!-- <div class="boat_variant heading">
+                                                <h4>Year Make Model </h4>
+                                            </div> -->
+                                           <div class="carousel_wraper">
+                                                <div class="owl-carousel owl-theme boatMain_carousel">
+                                                    <div class="item">
+                                                        <div class="img_wrap">
+                                                            <img src="./assets/images/index/boat_detail.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="img_wrap">
+                                                            <img src="./assets/images/index/boat_detail.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="img_wrap">
+                                                            <img src="./assets/images/index/boat_detail.jpg" alt="">
+                                                        </div>
+                                                    </div><div class="item">
+                                                        <div class="img_wrap">
+                                                            <img src="./assets/images/index/boat_detail.jpg" alt="">
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                           </div>
+                                        </div>
+                                           <div class="text_descrip">
+                                            <div class="heading">
+                                                <h2>DESCRIPTION</h2>
+                                                <p>Owner approved a $50,000 Price Reduction!</p>
+                                                <p>ALL offers will be considered - new boat is coming soon.....</p>
+                                                <p>The legendary 1987 54 Bertram is world renowned and a proven fish raising battle wagon. She is an amazing 
+                                                    rough water cruising sport fisherman. Bertram introduced the original 54 Convertible in 1981 and went on to 
+                                                    build only 177 hulls before production ended in 1992. By any standard, she was a classic boat with all of the 
+                                                    assets required in a purebred sportfishing yacht. The large cockpit of the Bertram 54 has a removable in-deck 
+                                                    fish box, tackle center and livewell, tuna door with gate, and engine room access.
+                                                </p>
+                                                <p>
+                                                    The legendary 1987 54 Bertram is world renowned and a proven fish raising battle wagon. She is an amazing 
+                                                    rough water cruising sport fisherman. Bertram introduced the original 54 Convertible in 1981 and went on to 
+                                                    build only 177 hulls before production ended in 1992. By any standard, she was a classic boat with all of the 
+                                                    assets required in a purebred sportfishing yacht. The large cockpit of the Bertram 54 has a removable in-deck 
+                                                    fish box, tackle center and livewell, tuna door with gate, and engine room access.
+                                                </p>
+                                                <p>
+                                                    She has bunk accommodations for 8 with a custom double bunk stateroom to port, bunk stateroom to 
+                                                    starboard and a double bunk stateroom in the bow. Also find 3 heads with vaccu-flush toilets. This offshore 
+                                                    dream boat has a water maker, large live well and ice maker to make those overnight canyon trips more 
+                                                    manageable. Feel comfortable running to the Bahamas for an extended stay with all the conveniences built in.
+                                                </p>
+                                            </div>
+                                           </div>
+                                           <div class="specs_sec">
+                                            <div class="text_wrap heading">
+                                                <h2>SPECS</h2>
+                                            </div>
+                                            <div class="specs_ul">
+                                                <div class="row">
+                                                   
+                                                    <div class="col-lg-6">
+                                                        <div class="bullet_point heading">
+                                                            <h5>Basic Boat Info</h5>
+                                                            <ul>
+                                                                <li><span>Make</span><span>Breteram</span></li>
+                                                                <li><span>Model</span><span>54 SPORT FISHERMAN</span></li>
+                                                                <li><span>Year</span><span>1987</span></li>
+                                                                <li><span>Condition</span><span>Used</span></li>
+                                                                <li><span>Category</span><span>Power</span></li>
+                                                                <li><span>Construction</span><span>Fiberglass</span></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="bullet_point heading">
+                                                            <h5>Dimensions</h5>
+                                                            <ul>
+                                                                <li><span>Make</span><span>Breteram</span></li>
+                                                                <li><span>Model</span><span>54 SPORT FISHERMAN</span></li>
+                                                                <li><span>Year</span><span>1987</span></li>
+                                                                <li><span>Condition</span><span>Used</span></li>
+                                                                <li><span>Category</span><span>Power</span></li>
+                                                                <li><span>Construction</span><span>Fiberglass</span></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="col-lg-6">
+                                                        <div class="bullet_point heading">
+                                                            <h5>Engines/ Speed</h5>
+                                                            <ul>
+                                                                <li><span>Make</span><span>Breteram</span></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="bullet_point heading">
+                                                            <h5>Office</h5>
+                                                          <p>500 South Main Street <br>
+                                                            Freeport, NY, US <br>
+                                                            Tel:516-771-7020</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                           </div>
+
+                                           <div class="boat_sample_pic">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <div class="img_wrap play_icon">
+                                                            <img src="./assets/images/index/detail1.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="img_wrap">
+                                                            <img src="./assets/images/index/detail2.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="img_wrap">
+                                                            <img src="./assets/images/index/detail3.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                           </div>
+                                            <div class="bottom_btn">
+                                                <a href="#" class="same_btn load" id="loadMore">LOAD MORE IMAGES</a>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- section right side text details -->
+                            <div class="col-xl-4 col-12">
+                                <div class="main_right_wraper new_right">
+                                    <div class="rigth_calc">
+                                        <div class="right_spec_div desktop heading">
+                                            <h3 class="text-center mb-3" style="color: var(--blue);">1987 Bertram 54 Sport Fisherman</h3>
+                                            <div class="inner_calc heading">                       
+                                                <h5 style="padding-right:10px;">Sale Price: </h5>
+                                                <h5 style="text-decoration: line-through;">$26510 </h5>
+                                            </div>
+                                            <div class="inner_calc heading text-center justify-content-between mt-3">
+                                                <h5 style=" padding-right:10px;"><a href="#exampleModal2" data-toggle="modal" class="same_btn" style="color: #a02a2a; font-family: karlaBOld; padding-right:10px;">PAYMENT CALCULATOR   </a></h5>
+                                                   <h5 style="color: #a02a2a; font-family: karlaBOld;"> $3,375<span>
+                                                            <a href="#exampleModal2" data-toggle="modal"><i class="fa-solid fa-calculator"></i></a>
+                                                        </span> 
+                                                   </h5> 
+                                               </div>
+                                            <!-- <div class="inner_calc">
+                                                <h5 style="color: #fe0011; font-family: barlowBold; padding-right:10px;">Our Price:  </h5>
+                                                <h5 style="color: #fe0011 !important; font-family: barlowBold">$62,992 </h5>
+                                            </div> -->
+                                        </div>
+                                        <div class="sale_prof">
+                                            <div class="card_wrap">
+                                                <span style="font-size: 24px; font-family: karlaBold; color: var(--blue);">SALES PROFESSIONAL</span>
+                                                <div class="img_wrap">
+                                                    <img src="./assets/images/index/sales_prof.png" alt="">
+                                                </div>
+                                                <div class="text_wrap heading">
+                                                    <p style="font-family: karlaBOld;">Name Lastname</p>
+                                                    <span class="d-block">631.791.6113</span>
+                                                    <span>email@strongsmarine.com </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right_form">
+                                            <form action="" class="form_wraper">
+                                                <h4 class="text-center mb-3">INQUIRY ABOUT THIS BOAT</h4>
+                                                <div class="form-group">
+                                                    <input class="form-control " id="first_name" name="first_name" type="text"  required="" placeholder="First Name*">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input class="form-control " id="first_name" name="first_name" type="text"  required="" placeholder="Last Name*">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input  class="form-control " id="phone" name="phone" type="text" placeholder="Phone *">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input class="form-control " id="email" name="email" type="email"  placeholder="Email*">
+                                                </div>
+                                                <div class="form-group">
+                                                    <textarea class="form-control" id="comments" rows="7" placeholder="Comments"></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input class="form-control " id="email" name="email" type="email"  placeholder="Email*">
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="top_chechk">
+                                                        <h4>I would like to:</h4>
+                                                        <p>Select all that apply</p>
+                                                    </div>
+                                                   <div class="make_offer d-flex align-items-center">
+                                                    <label class="container  w-100">Make an offer 
+                                                        <input type="checkbox" checked="checked">
+                                                        <span class="checkmark"></span>
+                                                      </label>
+                                                      <span class="w-100"><input class="first_la" type="text" name="" id="" placeholder="$"></span>
+                                                   </div>
+                                                    <label class="container">Schedule a Tour
+                                                      <input type="checkbox" >
+                                                      <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="container">Other
+                                                      <input class="showinp" type="checkbox" onchange="valueChanged()">
+                                                      <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="form-group hideinp">
+                                                    <input type="text" class="form-control chechk_other enter_option" id="inputAddress" placeholder="Enter">
+                                                </div>
+                                                <div class="form-group">
+                                                    <p class="mr-4 mb-3 d-block">Preferred contact method: </p>
+                                                    <div class="form-check form-check-inline">
+                                                        <input  type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
+                                                        <label class="form-check-label " for="inlineRadio1">Email</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                        <label class="form-check-label" for="inlineRadio2">Call</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                                        <label class="form-check-label" for="inlineRadio3">Text</label>
+                                                    </div>
+                                                 </div>
+                                                <button class="g-recaptcha yellow_btn  "
+                                                data-sitekey="{{config.googleCaptchaSiteKey}}"
+                                                data-callback='contact_form_boat_detail_btn'
+                                                data-action='submit'>SUBMIT</button>
+                                            </form>
+                                            <div class="btn_wraper">
+                                                <a href="#" class="second_btn">PRINT BASIC BROCHURE</a>
+                                                <a href="#exampleModal4" data-toggle="modal" class="second_btn bt_det_apply">APPLY FOR FINANCING</a>
+                                                <a href="#" class="second_btn">GET PRE-APPROVED</a>
+                                                <a href="#" class="second_btn">VALUE MY TRADE</a>
+                                                <a href="/financing" class="second_btn bt_det_apply">SHARE  </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <!-- BOAT DETAIL SECTION END -->
+
+    <!-- SAME BRAND BOATS SECTION START HERE -->
+    <section class="same_brand_boat">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-11 m-auto">
+                    <div class="main_wrap">
+                        <div class="top_heading heading">
+                            <h2>SIMILAR BOATS</h2>
+                        </div>
+                        <div class="body_wraper">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="card_wrap">
+                                        <a href="javascript:void()">
+                                            <div class="img_wrap">
+                                                <img src="" alt="">
+                                            </div>
+                                            <div class="card_body">
+                                                <div class="text_wrap heading">
+                                                    <h5>2021 Cobalt ABC</h5>
+                                                    <span class="red_value">$000,000</span>
+                                                    <div class="p_bars heading">
+                                                        <p >XXX Hours </p>
+                                                        <p>30 ft.</p>
+                                                        <p>In-Stock</p>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                           </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="card_wrap">
+                                       <a href="javascript:void()">
+                                        <div class="img_wrap">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="card_body">
+                                            <div class="text_wrap heading">
+                                                <h5>2021 Cobalt ABC</h5>
+                                                <span class="red_value">$000,000</span>
+                                                <div class="p_bars heading">
+                                                    <p >XXX Hours </p>
+                                                    <p>30 ft.</p>
+                                                    <p>In-Stock</p>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                       </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="card_wrap">
+                                        <div class="img_wrap">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="card_body">
+                                            <div class="text_wrap heading">
+                                                <h5>2021 Cobalt ABC</h5>
+                                                <span class="red_value">$000,000</span>
+                                                <div class="p_bars heading">
+                                                    <p >XXX Hours </p>
+                                                    <p>30 ft.</p>
+                                                    <p>In-Stock</p>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="card_wrap">
+                                        <div class="img_wrap">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="card_body">
+                                            <div class="text_wrap heading">
+                                                <h5>2021 Cobalt ABC</h5>
+                                                <span class="red_value">$000,000</span>
+                                                <div class="p_bars heading">
+                                                    <p >XXX Hours </p>
+                                                    <p>30 ft.</p>
+                                                    <p>In-Stock</p>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SAME BRAND BOATS SECTION END HERE -->
+
+    <!-- FOOTER SECTION START -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-11 m-auto">
+                    <div class="main_wraper">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="col_wraper">
+                                    <div class="footer_logo">
+                                        <img src="./assets/images/index/logo.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="in_inner">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-3">
+                                            <div class="col_wraper">
+                                                <ul class="nn">
+                                                    <li class="first_li"><a href="#">SHOP</a></li>
+                                                    <li><a href="#">New Boats at Strong’s at Grover’s</a></li>
+                                                    <li><a href="#">Userd Boats</a></li>
+                                                    <li><a href="#">Service & Parts</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-3">
+                                                <div class="col_wraper">
+                                                <ul>
+                                                    <li class="first_li"><a href="#">COMPANY</a></li>
+                                                    <li><a href="#">About</a></li>
+                                                    <li><a href="#">Events</a></li>
+                                                    <li><a href="#">Careers</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-3">
+                                            <div class="col_wraper">
+                                                <ul>
+                                                    <li class="first_li"><a href="#">CONNECT</a></li>
+                                                    <li><a href="#">BLOG</a></li>
+                                                    <li><a href="#">CONTACT US</a></li>
+                                                    <li><a href="#">MAP & DIRECTIONS</a></li>
+                                                    <li><a href="#">Contact</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="in_inner">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <div class="col_wraper lst_right">
+                                                <div class="email_wrap">
+                                                    <input type="text" name="" id="" placeholder="Email">
+                                                </div>
+                                                <div class="btn_wrap">
+                                                    <a href="javascript:void()">JOIN NEWSLETTER</a>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <ul>
+                                                <li><i class="fa-brands fa-facebook"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

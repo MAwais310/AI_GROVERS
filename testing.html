@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show/Hide Dynamic Divs</title>
+    <style>
+        /* Define CSS styles for divs and buttons */
+        .div-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .div-item {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 100px;
+            cursor: pointer;
+        }
+
+        .btn-show-hide {
+            background-color: #007bff;
+            color: #fff;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Create a div container for dynamic divs -->
+    <div class="div-container" id="div-container">
+        <!-- Dynamic divs will be added here -->
+    </div>
+
+    <!-- Create a button to show/hide the hidden divs -->
+    <button class="btn-show-hide" onclick="showHideDivs()">Show/Hide Divs</button>
+
+    <script>
+        // Create 10 dynamic divs
+        for (var i = 1; i <= 10; i++) {
+            var div = document.createElement('div');
+            div.className = 'div-item';
+            div.textContent = i;
+            div.style.display = i <= 3 ? 'block' : 'none'; // Show the first 3 divs, hide the rest
+            document.getElementById('div-container').appendChild(div);
+        }
+
+        function showHideDivs() {
+            var divItems = document.querySelectorAll('.div-item:nth-child(n+4)');
+            divItems.forEach(function (div) {
+                if (div.style.display === 'none') {
+                    div.style.display = 'block'; // Show the hidden divs
+                } else {
+                    div.style.display = 'none'; // Hide the visible divs
+                }
+            });
+        }
+    </script>
+</body>
+</html>

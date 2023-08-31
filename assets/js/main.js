@@ -104,7 +104,38 @@ $('.gallery_wala').owlCarousel({
             items: 2
 		}
     }
-})
+});
+
+$('.boatMain_carousel').owlCarousel({
+    loop:true,
+    margin:10,
+	// center:true,
+    // stagePadding: 50,
+    nav:true,
+	dots: false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        },
+		1400:{
+            items: 1
+		}
+    }
+});
+
+function valueChanged()
+    {
+        if($('.showinp').is(":checked"))   
+            $(".form-group").show();
+        else
+            $(".hideinp").hide();
+    }
 
 //-----JS for Price Range slider----
 
@@ -185,6 +216,25 @@ $("#slider-range3").slider({
     }
 });
 
+// rangebar 5
+$("#slider-range4").slider({
+    range: true,
+    orientation: "horizontal",
+    min: 0,
+    max: 10000,
+    values: [0, 10000],
+    step: 100,
+
+    slide: function(event, ui) {
+        if (ui.values[0] == ui.values[1]) {
+            return false;
+        }
+
+        $("#min_price4").val(ui.values[0]);
+        $("#max_price4").val(ui.values[1]);
+    }
+});
+
 $( ".opeN_clik" ).each(function(index) {
     $(this).on("click", function(){
 		$("#img_overlay").addClass("red_cell");
@@ -194,6 +244,7 @@ $( ".opeN_clik" ).each(function(index) {
 		$(".dd1").addClass("collapsed");
 		$(".dd2").addClass("collapsed");
 		$(".dd3").addClass("collapsed");
+        $(".ddtype").addClass("collapsed");
 		$(".dd4").addClass("collapsed");
 		$(".dd5").addClass("collapsed");
 		$(".dd6").addClass("collapsed");
@@ -217,6 +268,10 @@ $( ".opeN_clik" ).each(function(index) {
 			$(".top_des_fil").show();
 			$(".dd3").removeClass("collapsed");
 			$("#collapsebrand").addClass("show");
+        }else if(my_title == "type"){
+			$(".top_des_fil").show();
+			$(".ddtype").removeClass("collapsed");
+			$("#collapsetype").addClass("show");
         } else if(my_title == "Model"){
 			$(".top_des_fil").show();
 			$(".dd2").removeClass("collapsed");
@@ -228,16 +283,15 @@ $( ".opeN_clik" ).each(function(index) {
         } else if(my_title == "Length"){
 			$(".top_des_fil").show();
 			$(".dd5").removeClass("collapsed");
-
 			$("#collapsesix").addClass("show");
         } else if(my_title == "Price"){
 			$(".top_des_fil").show();
-			$(".dd6").removeClass("collapsed");
-			$("#collapseeight").addClass("show");
+			$(".dd_price").removeClass("collapsed");
+			$("#collapseprice").addClass("show");
         } else if(my_title == "Location"){
 			$(".top_des_fil").show();
-			$(".dd7").removeClass("collapsed");
-			$("#collapseSeven").addClass("show");
+			$(".dd_location").removeClass("collapsed");
+			$("#collapselocation").addClass("show");
         }	
     });
 });
@@ -264,43 +318,58 @@ $(".close_cross").click(function(){
   });
 
 
-  $('.new_for').slick({
-    slidesToShow: 1,
-                  slidesToScroll: 1,
-                  arrows: true,
-                  fade: false,
-                  dots: false,
-                  asNavFor: '.for_nav',
-                  adaptiveHeight: true,
-                  prevArrow:"<i class='fa-solid fa-chevron-left lefti'></i>",
-                  nextArrow:"<i class='fa-solid fa-chevron-right righti'></i>"
-});
-$('.for_nav').slick({
-        slidesToShow: 5,
-                  slidesToScroll: 1,
-                  arrows: false,
-                  asNavFor: '.new_for',
-                  focusOnSelect: true,
-                  adaptiveHeight: true,
-                  responsive: [{
-                          breakpoint: 1200,
-                          settings: {
-                              slidesToShow: 4,
-                          }
-                      },
-                      {
-                          breakpoint: 768,
-                          settings: {
-                              slidesToShow: 3,
-                              arrows: false,
-                          }
-                      },
-                      {
-                          breakpoint: 568,
-                          settings: {
-                              slidesToShow: 2,
-                              arrows: false,
-                          }
-                      }
-                  ]
-});
+  $(document).ready(function () {
+    $(".load_more").slice(0, 2).show();
+    if ($(".load_more:hidden").length != 0) {
+        $("#loadMore").show();
+    }
+    $("#loadMore").on("click", function (e) {
+        e.preventDefault();
+        $(".load_more:hidden").slice(0, 3).slideDown();
+        if ($(".load_more:hidden").length == 0) {
+            $("#loadMore").text("No More to view")
+                .fadOut("slow");
+        }
+    });
+})
+
+//   $('.new_for').slick({
+//     slidesToShow: 1,
+//                   slidesToScroll: 1,
+//                   arrows: true,
+//                   fade: false,
+//                   dots: false,
+//                   asNavFor: '.for_nav',
+//                   adaptiveHeight: true,
+//                   prevArrow:"<i class='fa-solid fa-chevron-left lefti'></i>",
+//                   nextArrow:"<i class='fa-solid fa-chevron-right righti'></i>"
+// });
+// $('.for_nav').slick({
+//         slidesToShow: 5,
+//                   slidesToScroll: 1,
+//                   arrows: false,
+//                   asNavFor: '.new_for',
+//                   focusOnSelect: true,
+//                   adaptiveHeight: true,
+//                   responsive: [{
+//                           breakpoint: 1200,
+//                           settings: {
+//                               slidesToShow: 4,
+//                           }
+//                       },
+//                       {
+//                           breakpoint: 768,
+//                           settings: {
+//                               slidesToShow: 3,
+//                               arrows: false,
+//                           }
+//                       },
+//                       {
+//                           breakpoint: 568,
+//                           settings: {
+//                               slidesToShow: 2,
+//                               arrows: false,
+//                           }
+//                       }
+//                   ]
+// });
