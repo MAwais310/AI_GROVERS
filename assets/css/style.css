@@ -421,7 +421,7 @@ select.form-control:not([size]):not([multiple]){
     position: relative ;
 }
 .navbar{
-    padding: 1rem 9rem;
+    padding: 0.2rem 9rem;
     z-index: 5;
     width: 100%;
     transition: all 0.5s ease-in-out;
@@ -440,6 +440,7 @@ nav .left_nav {
     top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 10;
 
 }
 nav .navbar-collapse {
@@ -454,7 +455,7 @@ nav .right_nav {
 }
 
 nav ul li {
-    margin-right: 20px;
+    margin-right: 40px;
 }
 .withbg nav ul li a{
     color:var(--blue);
@@ -466,6 +467,14 @@ nav ul li a{
     font-family: karlaBold;
     white-space: nowrap;
 }
+.active {
+
+    border-bottom: 3px solid #fe0011;
+    padding-bottom: 10px;
+}
+.active a{
+    color: #fe0011 !important; 
+}
 .withbg nav ul li a:hover{
     color: var(--blue) !important;
 }
@@ -474,18 +483,20 @@ nav .form-control:focus {
 }
 
 /* MEGA NAV CSS */
-
-.nav_link:hover .subnav{
-    visibility: visible;
-    height: auto;
-    padding: 19px 10px;  
+.subnav1{
+    display: flex !important;
+    padding: 19px 10px ;
 }
-.nav_link .mega_sub .main_wrap{
+/* .nav_link:hover .subnav{
+    display: flex;
+      
+} */
+/* .nav_link .mega_sub .main_wrap{
     display: none;
-}
-.nav_link:hover .mega_sub .main_wrap{
+} */
+/* .nav_link:hover .mega_sub .main_wrap{
     display: block;
-}
+} */
 .mega_sub{
     padding: 35px 10px;
 }
@@ -503,16 +514,14 @@ nav .form-control:focus {
     color: #000;
 }
 .subnav{
-    visibility: hidden;
-    height: 0;
     position: absolute;
     left: 0;
-    top: 82px;
+    top: 55px;
     width: 100%;
-    background-color: #fff;
-    z-index: 5;
-    display: flex;
+    background-color: #f7f7f7;
+    display: none;
     transition: all 0.5s ease-in-out;
+    padding: 0px;
 }
 .subnav_item{
     display: flex;
@@ -522,6 +531,13 @@ nav .form-control:focus {
 .subnav_item a{
     padding: 0px 30px;
 }
+/* .brand_li{
+    position: relative;
+}
+.brand_item{
+    position: absolute;
+} */
+
 
 
 .bkChng{
@@ -605,6 +621,36 @@ nav .form-control:focus {
     width: 22px;
     background: transparent;
     border: 1px solid #65686b;
+}
+
+.last_nav ul li a{
+    font-size: 18px;
+    font-family: karlaRegular;
+    padding-bottom: 10px;
+    
+}
+.last_nav .right_one .sub_items{
+    margin-left: 10px;
+}
+ .sub_items{
+    visibility: hidden;
+}
+
+.visible_n{
+    visibility: visible;
+}
+.navbre{
+    position: fixed;
+    width: 100%;
+    max-height: 400px;
+    z-index: 4;
+    display: none;
+    background-color: #f7f7f7;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.showbg{
+    display: block;
 }
 
 /* HEADer csS START */
@@ -2800,6 +2846,53 @@ button:focus {
 .left_side_carousel .parent_whole_wrap .NavImages{
     padding: 10px 10px 10px 0px;
 }
+.left_side_carousel .main_right_wraper .contact_num a{
+    font-size: 30px;
+    font-family: karlaMedium;
+    color: var(--blue);
+    padding: 30px 0px;
+}
+.left_side_carousel .main_right_wraper .contact_num{
+    border-top: 1px solid #d7d7d7;
+    border-bottom: 1px solid #d7d7d7;
+    text-align: center;
+}
+
+
+.boat_sample_pic .img_wrap{
+    position: relative;
+}
+
+.boat_sample_pic .row *.col-lg-4:nth-child(3) > .img_wrap::after{
+    content: "";
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   background: rgba(0,0,0,0.5);
+} 
+.boat_sample_pic .img_wrap .text_wrap p{
+    font-size: 22px;
+    color: #fff;
+    font-family: karlaBold;
+}
+.boat_sample_pic .img_wrap .text_wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    display: none;
+}
+.boat_sample_pic .row *.col-lg-4:nth-child(3) > .img_wrap .text_wrap{
+    display: block;
+}
+
 
 
 /* SIMILAR SECTION CSS */
@@ -2824,17 +2917,29 @@ button:focus {
     font-family: barlowMedium;
 }
 /********************************************  BOAT DETAIL PAGE END HERE ******************************************* */
-.left_side_carousel .main_right_wraper .contact_num a{
-    font-size: 30px;
-    font-family: karlaMedium;
-    color: var(--blue);
-    padding: 30px 0px;
+
+/********************************************* TRAN_ATLANTIC PAGE START HERE *********************************************/
+.tran_banner{
+    padding: 65px 0px;
 }
-.left_side_carousel .main_right_wraper .contact_num{
-    border-top: 1px solid #d7d7d7;
-    border-bottom: 1px solid #d7d7d7;
-    text-align: center;
+.tran_banner .top_img{
+    max-width: 930px;
+    margin: 0 auto;
+    padding: 40px 0px;
 }
+.tran_banner .text_wrap p{
+    padding-bottom: 20px;
+}
+.tran_banner .mid_img{
+    max-width: 930px;
+    margin: 0 auto;
+    padding: 40px 0px; 
+}
+
+
+/********************************************* TRAN_ATLANTIC PAGE END HERE *********************************************/
+
+
 
 
 

@@ -1,4 +1,72 @@
 
+
+
+// SUBNAV SHOW HIDE ONCLCIK 
+$('.boat_li').on("click", function(){
+    $(".subnav").toggleClass('subnav1');
+});
+
+$('.brand_li').on("click", function(){
+
+        $(".brand_item").toggleClass('visible_n');
+        $(".navbre").toggleClass("showbg");
+});
+
+$('.service_li').on("click", function(){
+    $(".service_item").toggleClass('visible_n');
+    $(".navbre").toggleClass("showbg");
+});
+
+$('.loc_li').on("click", function(){
+    $(".loc_item").toggleClass('visible_n');
+    $(".navbre").toggleClass("showbg");
+});
+
+$('.life_li').on("click", function(){
+
+    $(".life_item").toggleClass('visible_n');
+    $(".navbre").toggleClass("showbg");
+});
+
+$('.about_li').on("click", function(){
+
+    $(".about_item").toggleClass('visible_n');
+    $(".navbre").toggleClass("showbg");
+});
+
+// $('.service_li').hover(
+//     function(){ $(".service_item").addClass('visible_n'); $(".navbre").toggleClass("showbg"); },
+//     function(){ $(".service_item").removeClass('visible_n'); $(".navbre").removeClass("showbg"); }
+// )
+// $('.loc_li').hover(
+//     function(){ $(".loc_item").addClass('visible_n'); $(".navbre").toggleClass("showbg"); },
+//     function(){ $(".loc_item").removeClass('visible_n'); $(".navbre").removeClass("showbg"); }
+// )
+// $('.life_li').hover(
+//     function(){ $(".life_item").addClass('visible_n'); $(".navbre").toggleClass("showbg"); },
+//     function(){ $(".life_item").removeClass('visible_n'); $(".navbre").removeClass("showbg"); }
+// )
+// $('.about_li').hover(
+//     function(){ $(".about_item").addClass('visible_n'); $(".navbre").toggleClass("showbg"); },
+//     function(){ $(".about_item").removeClass('visible_n'); $(".navbre").removeClass("showbg"); }
+// )
+
+
+// To add styling on li in navbar
+$(".main_nav_sec li").click(function() {     
+    // Select all list items
+    var listItems = $(".main_nav_sec li");
+    // Remove 'active' tag for all list items
+    // for (let i = 0; i < listItems.length; i++) {
+    //     listItems[i].classList.remove("active");
+    // }
+    // Add 'active' tag for currently selected item
+    // this.classList.add("active");
+    $(this).toggleClass("active")
+});
+
+
+
 // backgrond color before nav if scroll down
 $(document).ready(function() {
     $(window).scroll(function() {
