@@ -153,6 +153,7 @@ $('.event_wala').owlCarousel({
 
 $('.gallery_wala').owlCarousel({
     loop:true,
+    items: 2,
     margin:10,
 	center:true,
     stagePadding: 50,
@@ -173,8 +174,23 @@ $('.gallery_wala').owlCarousel({
 			margin:40,
             items: 2
 		}
+    },
+    onInitialized: function(event) {
+        var itemCount = event.item.count; // Total slides
+        var currentItem = event.item.index - 2; // Current slide number (1-based index)
+
+        // Display current slide number and total slides
+        $('.current-slide').text(currentItem);
+        $('.total-slides').text(itemCount);
+    },
+    onChanged: function(event) {
+        var itemCount = event.item.count; // Total slides
+        var currentItem = event.item.index - 2; // Current slide number (1-based index)
+
+        // Update current slide number
+        $('.current-slide').text("/" + currentItem);
     }
-});
+})
 
 $('.boatMain_carousel').owlCarousel({
     loop:true,

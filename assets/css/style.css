@@ -675,7 +675,7 @@ nav .form-control:focus {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, .4);
+    background: rgba(64, 62, 62,  0.8);
 }
 .banner .img_wrap img{
     height: 100%;
@@ -929,7 +929,17 @@ footer .soc_icon i{
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, .6);
+    background: rgba(64, 62, 62,  0.8);
+
+}
+.alag .img_wrap::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(64, 62, 62,  0.8);
 
 }
 
@@ -1027,6 +1037,12 @@ footer .soc_icon i{
 
 /******************************** STORAGE PAGE CSS START HERE ********************************/
 /* STORAGE DETAIL SECTION CSS */
+.storage_banner .text_wrap p{
+    padding-top: 28px;
+}
+.storage_banner .text_wrap{
+    max-width: 900px;
+}
 .storage_detail .main_wraper{
     padding: 65px 0px;
 }
@@ -1256,6 +1272,12 @@ footer .soc_icon i{
     color: var(--blue);
     font-family: street;
 }
+.total_number{
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+
 
 /******************************** EVENT PAGE CSS END HERE ********************************/
 
@@ -2924,6 +2946,12 @@ button:focus {
 /********************************************* TRAN_ATLANTIC PAGE START HERE *********************************************/
 .tran_banner{
     padding: 65px 0px;
+}
+.tran_banner .top_text h2{
+    font-family: street;
+    color: var(--blue);
+    padding-top: 20px;
+    text-align: center;
 }
 .tran_banner .top_img{
     max-width: 930px;
