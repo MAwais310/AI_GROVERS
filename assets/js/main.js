@@ -135,13 +135,14 @@ $('.event_wala').owlCarousel({
 	dots: false,
     responsive:{
         0:{
-            items:3
+            items:1
         },
         600:{
-            items:3
+            items:2,
+            stagePadding: 20,
         },
         1000:{
-            items:3
+            items:2
         },
 		1400:{
 			margin:40,
@@ -159,13 +160,14 @@ $('.gallery_wala').owlCarousel({
 	dots: false,
     responsive:{
         0:{
-            items:3
+            items:1
         },
         600:{
-            items:3
+            items:2,
+            stagePadding: 20,
         },
         1000:{
-            items:3
+            items:2
         },
 		1400:{
 			margin:40,

@@ -316,7 +316,9 @@ select.form-control:not([size]):not([multiple]){
 /* .navber_btn{
     border-color: transparent !important;
 } */
-
+.navbar-light .navbar-toggler {
+    border-color: transparent !important;
+}
 
 
 
@@ -467,12 +469,12 @@ nav ul li a{
     font-family: karlaBold;
     white-space: nowrap;
 }
-.active {
+nav .active {
 
     border-bottom: 3px solid #fe0011;
     padding-bottom: 10px;
 }
-.active a{
+nav .active a{
     color: #fe0011 !important; 
 }
 .withbg nav ul li a:hover{
@@ -700,6 +702,7 @@ nav .form-control:focus {
     width: 100%;
     max-width: 750px;
     margin: 0 auto;
+    padding: 0px 25px;
 }
 .banner .text_wrap .heading h1{
     color: #fff;
@@ -887,7 +890,7 @@ footer .col_wraper .btn_wrap a{
     color: var(--blue);
     display: inline-block;
     border: 1px solid var(--blue);
-    padding: 15px 40px;
+    padding: 15px 8px;
     width: 100%;
     margin-top: 15px;
     text-align: center;
@@ -1734,7 +1737,7 @@ footer .soc_icon i{
 
 /* HISTORY SECTION CSS */
 .history{
-    padding: 8px 0px;
+    padding: 20px 0px;
 }
 .history .top_text h2{
     text-align: center;
@@ -2952,45 +2955,89 @@ button:focus {
 /* MEDIA QUERIES */
 
 @media(max-width:1440px){
-    .trailer .main_wraper .card_img {
-        max-width: 406px;
-        height: 400px;
-        margin: 0 auto;
+    .heading h2 {
+        font-size: 31px;
+    }
+    .heading h3{
+        font-size: 22px;
+    }
+    .heading h5 {
+        font-size: 20px;
     }
 
-    .about_sale .text_wrap{
-        padding: 50px 20px;
+    .navbar {
+        padding: 0.2rem 2rem;
     }
-    .child_sec .inner_div{
-        align-items: normal;
-        flex-direction: column  ;
+    nav ul li a{
+        font-size: 18px;
     }
-    .child_sec .inner_div .img_wrap{
-        width: 100%;
-        max-width: 500px;
-        height: 500px;
-        margin-bottom: 20px;
+    nav ul li {
+        margin-right: 12px;
     }
-    .child_sec .inner_div .img_wrap img{
-        height: 100%;
+    .pentagon::before {
+        bottom: -44.8675px;
+        border-left: 67px solid transparent;
+        border-right: 68px solid transparent;
+        border-top: 45.8675px solid #fff;
     }
-    .child_sec .inner_div .text_wrap{
-        width: 100%;
-        padding-left: 0px;
+    .pentagon {
+        width: 135px;
+    }
+
+    .groove_text .img_wrap{
+        min-height: 600px;
+    }
+
+
+    .sale_prof .sale_top{
+        font-size: 20px !important;
+    }
+
+
+    .event_slider .carousel_wraper .card_wrap .img_wrap{
+        height: 470px;
+    }
+
+    
+
+    .left_side_carousel .bullet_point ul li{
+        font-size: 17px;
     }
 }
 
 @media(max-width:1240px){
+    .btn_wrap a{
+        font-size: 18px;
+    }
+    .nav_left {
+        max-width: 521px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .nav_rights{
+        max-width: 490px;
+        flex-wrap: wrap;
+        padding-left: 48px;
+    }
+
+    .contact .text_wrap .phone_num a{
+        font-size: 20px;
+    }
+    .contact .text_wrap .p_m{
+        font-size: 18px;
+    }
+    .contact .form_body h5{
+        font-size: 25px;
+    }
+
+
 
 }
 
 @media(max-width:1024px){
 
-    .heading h2{
-        font-size: 28px;
-    }
-    .heading h4{
-        font-size: 30px;
+    .heading h4 {
+        font-size: 25px;
     }
 
     .brand_logo .main_wrap{
@@ -3018,92 +3065,200 @@ button:focus {
 
 }
 
-@media(max-width:991px){
-    .heading h1{
-        font-size: 30px;
-    }
-    .brand_logo{
-        padding: 45px 0px;
-    }
-    .heading h5{
-        font-size: 21px;
-    }
+    @media(max-width:991px){
+        .heading h1 {
+            font-size: 30px;
+        }
+        h2{
+            font-size: 25px;
+        }
+        h3{
+            font-size: 23px;
+        }
+        h4{
+            font-size: 21px;
+        }
+        h5{
+            font-size: 18px;
+        }
+        .heading p{
+            font-size: 18px;
+        }
+        /* MOBILE NAV */
+        .navbar{
+            padding: 0rem 1rem 0rem 0rem;
+        }
+        .pentagon {
+            position: relative;
+            top: 0px;
+            height: 70px;
+            background-color: #fff;
+        }
+        .navbar .logo_div img {
+            bottom: 0px;
+            left: 3px;
+        }
+        .nav_items {
+            display: none !important;
+        }
+        .mobile_nav {
+            display: block;
+            width: 100%;
+            max-width: 270px;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 20px;
+        }
+        .mobile_nav ul li a {
+            display: inline-block;
+            padding-bottom: 10px;
+            font-size: 18px;
+        }
+        nav ul li{
+            margin-right: 0px;
+        }
+        .mobile_nav ul li span {
+            padding-left: 7px;
+        }
+        .rotate_180 {
+            transform: rotate(180deg);
+        }
+        nav .nav_menu {
+            background-color: #000000;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;  
+        }
+        nav .nav_items{
+            flex-direction: column;
+            padding: 25px 20px;
+        }
+        nav .left_nav {
+            position: relative;
+            transform: none;
+            top: 0;
+            left: 0;
+        }
+        header .nav-link{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .dropdown_arrow{
+            display: flex;
+        }
+        nav .main_nav_sec {
+            justify-content: center;
+            width: 100%;
+        }
+        .my-navs{
+            position: static;
+            transform: none;
+            margin-top: 0px;
+        }
 
 
-    .trailer{
-        padding: 45px 0px;
-    }
-    .trailer .main_wraper .card_img{
-        height: 300px;
-        max-width: 350px;
-    }
+        .banner .text_wrap span {
+            font-size: 20px;
+            padding-top: 10px;
+        }
+
+        .about{
+            padding: 50px 0px;
+        }
+
+        .left_side_carousel .bullet_point{
+            margin: 0 auto;
+        }
+
+        .blogs .right_wraper{
+            margin-top: 40px;
+        }
+
+        .same_brand_boat{
+            padding: 45px 0px;
+        }
+
+        .contact .contact_detail{
+            padding: 45px 0px;
+        }
+        .contact .right_form{
+            margin-bottom: 45px;
+        }
+
+        .event_slider .carousel_wraper .card_wrap .img_wrap{
+            height: 400px;
+        }
+
+        .docakge_detail .img_wraper{
+            padding-bottom: 10%;
+        }
+        .docakge_detail .main_wraper{
+            padding: 45px 0px;
+        }
+        .service_detail .right_wraper .form_body{
+            padding-bottom: 45px;
+        }
 
 
-    .child_sec{
-        padding: 45px 0px;
-    }
+        .power_detail .left_wraper{
+            padding-bottom: 45px;
+        }
+        .service_detail .right_wraper{
+            padding-top: 45px;
+        }
 
-    .about_sale{
-        padding: 45px 0px;
-    }
-    .sales2{
-        display: flex;
-        flex-direction: column-reverse;
-    }
+        
+        .testimonial{
+            padding: 45px 0px;
+        }
+        .team_ceo .team_member .inner_wrap{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .team_ceo .team_member .card_wrap{
+            padding: 10px 20px;
+        }
 
-
-    .about_banner .img_wrap{
-        min-height: 550px;
+        footer{
+            padding: 45px 0px;
+        }
+        footer .in_inner{
+            margin-top: 30px;
+        }
+        .featured{
+            padding: 45px 0px;
+        }
+        .north_brand{
+            padding: 45px 0px;
+        }
+        .boaters .text_wrap{
+            padding: 10px 20px;
+        }
+        .boaters h2{
+            font-size: 18px;
+        }
+        footer .footer_logo{
+            max-width: 250px;
+            margin: 0 auto;
+        }
+        footer .footer_data .adress .map_s{
+            justify-content: center;
+        }
+        footer .footer_data{
+            text-align: center;
+        }
+        footer .footer_data input{
+            margin: 0 auto;
+        }
+        footer .footer_data{
+            margin-top: 20px;
+        }
+        .dek{
+            display: none;
+        }
     }
-
-
-    .service_banner .img_wrap{
-        min-height: 550px !important;
-    }
-    .service_process{
-        padding: 45px 0px;
-    }
-    .service_process .body_wraper .card_wraper{
-        margin-bottom: 20px;
-    }
-    .maintinance .bulet_wraper{
-        flex-direction: column;
-    }
-    .maintinance .img_wrap{
-        min-height: 450px;
-    }
-
-
-    .expert_part{
-        padding: 45px 0px;
-    }
-
-    .request_part{
-        padding: 45px 0px;
-    }
-
-
-    .left_side_carousel .parent_whole_wrap{
-        padding-left: 0px;
-    }
-
-    .auto_repair .black_text{
-        margin-top: 30px;
-    }
-
-    .service{
-        padding: 45px 0px;
-    }
-
-    footer{
-        padding: 45px 0px;
-    }
-    footer .lst_right{
-        text-align: center;
-        border-left: 0px;
-        margin-top: 20px;
-    }
-}
 
 @media(max-width:768px){
     .same_btn {
@@ -3114,14 +3269,30 @@ button:focus {
         min-height: 450px;
     }
 
-    .maintinance .planing_sec{
-        padding: 50px 20px  ;
+
+    .left_side_carousel .play_icon::after {
+        width: 45px;
+        height: 45px;
+        border-radius: 50px;
     }
 
-    .location .loca_cards .card_wrap .img_wrap{
+    .service_detail .top_brand_section{
+        flex-wrap: wrap;
+    }
+    .service_detail .top_brand_section .img_wrap img{
+        padding: 20px 15px;
+    }
+
+    .storage_detail .storage_type .img_wrap{
         margin: 0 auto;
     }
-    .location .loca_cards .card_wrap .body_wrap{
+
+    .team_ceo .card_wrap .img_wrap img{
+        object-fit: contain;
+    }
+
+
+    footer .in_inner{
         text-align: center;
     }
 }
@@ -3177,6 +3348,10 @@ button:focus {
         padding: 0px 44px 0px 20px;
     }
 
+    .event_slider .carousel_wraper .card_wrap .img_wrap{
+        height: 320px;
+    }
+
     /*********************************** MENU STYLE CHANGE START HERE **************************************/
 
     /************************************ NORMAL PAGES CSS START HERE ************************************/
@@ -3201,9 +3376,53 @@ button:focus {
     }
 
 
-    .about_banner .img_wrap{
-        min-height: 890px;
+    .line{
+        display: none;
     }
+    .line2{
+        display: none;
+    }
+    .history .col-lg-6:nth-child(even){
+        border: 0px;
+    }
+    .content.history.second{
+        border: 0px !important;
+    }
+    .content.history{
+        border: 0px !important;
+    }
+    .histwrap{
+        flex-direction: column;
+        padding: 10px 5px;
+    }
+    .histwrap2{
+        flex-direction: column;
+        padding: 10px 5px;
+    }
+    .dbl h6{
+        width: 80px !important;
+        height: 80px !important;
+    }
+    .date {
+        top: 100%;
+        right: auto !important;
+    }
+    .date.second{
+        left: auto;
+    }
+    .date.dbl.second{
+        left: auto;
+    }
+    .date>h6{
+        width: 70px;
+        height: 70px;
+        font-size: 15px;
+    }
+    .imghi{
+        width: 100%;
+    }
+
+
 
     .service_banner .img_wrap{
         min-height: 690px !important;
