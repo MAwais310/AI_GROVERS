@@ -148,6 +148,22 @@ $('.event_wala').owlCarousel({
 			margin:40,
             items: 2
 		}
+    },
+    onInitialized: function(event) {
+        var itemCount = event.item.count; // Total slides
+        var currentItem = event.item.index - 1; // Current slide number (1-based index)
+
+        // Display current slide number and total slides
+        $('.current-slide').text(currentItem).html(currentItem+" / "+itemCount) ;
+        // $('.total-slides').text(itemCount);
+    },
+    onChanged: function(event) {
+        var itemCount = event.item.count; // Total slides
+        var currentItem = event.item.index - 1; // Current slide number (1-based index)
+
+        // Update current slide number
+        // $('.current-slide').text("/" + currentItem);
+        $('.current-slide').text(currentItem).html(currentItem+" / " +itemCount) ;
     }
 });
 
@@ -177,20 +193,21 @@ $('.gallery_wala').owlCarousel({
     },
     onInitialized: function(event) {
         var itemCount = event.item.count; // Total slides
-        var currentItem = event.item.index - 2; // Current slide number (1-based index)
+        var currentItem = event.item.index - 1; // Current slide number (1-based index)
 
         // Display current slide number and total slides
-        $('.current-slide').text(currentItem);
-        $('.total-slides').text(itemCount);
+        $('.current-slide').text(currentItem).html(currentItem+" / "+itemCount) ;
+        // $('.total-slides').text(itemCount);
     },
     onChanged: function(event) {
         var itemCount = event.item.count; // Total slides
-        var currentItem = event.item.index - 2; // Current slide number (1-based index)
+        var currentItem = event.item.index - 1; // Current slide number (1-based index)
 
         // Update current slide number
-        $('.current-slide').text("/" + currentItem);
+        // $('.current-slide').text("/" + currentItem);
+        $('.current-slide').text(currentItem).html(currentItem+" / " +itemCount) ;
     }
-})
+});
 
 $('.boatMain_carousel').owlCarousel({
     loop:true,

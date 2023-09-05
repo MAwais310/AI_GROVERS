@@ -1221,6 +1221,9 @@ footer .soc_icon i{
     text-align: center;
     padding-bottom: 30px;
 }
+.event_slider .carousel_wraper{
+    position: relative;
+}
 .event_slider .carousel_wraper .card_wrap .img_wrap{
     /* max-width: 920px; */
     height: 540px;
@@ -1272,10 +1275,16 @@ footer .soc_icon i{
     color: var(--blue);
     font-family: street;
 }
-.total_number{
+.event_slider .total_number{
     display: flex;
     align-items: center;
     position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.event_slider .total_number span{
+    font-weight: bold;
 }
 
 
